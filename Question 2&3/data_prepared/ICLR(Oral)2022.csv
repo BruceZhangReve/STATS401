@@ -1,0 +1,56 @@
+,Title,Topics,Weakness,Review_Rating
+0,A Fine-Grained Analysis on Distribution Shift,Biological Applications in AI,Experimental Weaknesses and Limitations,8.666666666666666
+1,"A New Perspective on ""How Graph Neural Networks Go Beyond Weisfeiler-Lehman?""",Graph Neural Networks and Graph Theory,Clarity and Readability Issues,8.0
+2,Analytic-DPM: an Analytic Estimate of the Optimal Reverse Variance in Diffusion Probabilistic Models,Unclassified,Missing Related Work and Comparisons,8.0
+3,Asymmetry Learning for Counterfactually-invariant Classification in OOD Tasks,Unclassified,Missing Related Work and Comparisons,8.0
+4,BEiT: BERT Pre-Training of Image Transformers,Transformers and Sequence Modeling,Missing Related Work and Comparisons,8.0
+5,Bootstrapped Meta-Learning,Reinforcement Learning and Control,Clarity and Readability Issues,9.0
+6,Comparing Distributions by Measuring Differences that Affect Decision Making,Unclassified,Clarity and Readability Issues,8.0
+7,Coordination Among Neural Modules Through a Shared Global Workspace,Transformers and Sequence Modeling,Clarity and Readability Issues,6.666666666666667
+8,CycleMLP: A MLP-like Architecture for Dense Prediction,Unclassified,Clarity and Readability Issues,7.5
+9,DISCOVERING AND EXPLAINING THE REPRESENTATION BOTTLENECK OF DNNS,Biological Applications in AI,Clarity and Readability Issues,8.5
+10,Data-Efficient Graph Grammar Learning for Molecular Generation,Unclassified,Experimental Weaknesses and Limitations,8.0
+11,Diffusion-Based Voice Conversion with Fast Maximum Likelihood Sampling Scheme,Diffusion Models and Generative Modeling,Methodological Concerns and Theoretical Justifications,8.0
+12,Domino: Discovering Systematic Errors with Cross-Modal Embeddings,Multimodal Learning and Vision-Language Models,Missing Related Work and Comparisons,8.0
+13,Efficiently Modeling Long Sequences with Structured State Spaces,Unclassified,Clarity and Readability Issues,8.0
+14,Einops: Clear and Reliable Tensor Manipulations with Einstein-like Notation,Unclassified,Clarity and Readability Issues,4.0
+15,Expressiveness and Approximation Properties of Graph Neural Networks,Graph Neural Networks and Graph Theory,Clarity and Readability Issues,8.666666666666666
+16,Extending the WILDS Benchmark for Unsupervised Adaptation,Unclassified,Missing Related Work and Comparisons,5.0
+17,F8Net: Fixed-Point 8-bit Only Multiplication for Network Quantization,Model Compression and Quantization,Missing Related Work and Comparisons,6.5
+18,Filtered-CoPhy: Unsupervised Learning of Counterfactual Physics in Pixel Space,Statistical Theory and High-Dimensional Data,Missing Related Work and Comparisons,8.666666666666666
+19,Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution,Multitask and Transfer Learning,Clarity and Readability Issues,8.0
+20,Finetuned Language Models are Zero-Shot Learners,Unclassified,Missing Related Work and Comparisons,8.0
+21,Frame Averaging for Invariant and Equivariant Network Design,Unclassified,Clarity and Readability Issues,8.0
+22,GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation,Diffusion Models and Generative Modeling,Clarity and Readability Issues,7.333333333333333
+23,Hyperparameter Tuning with Renyi Differential Privacy,Federated Learning and Privacy,Methodological Concerns and Theoretical Justifications,8.0
+24,Language modeling via stochastic processes,Unclassified,Clarity and Readability Issues,8.0
+25,Large Language Models Can Be Strong Differentially Private Learners,Large Language Models and Language Modeling,Experimental Weaknesses and Limitations,7.333333333333333
+26,Learning Strides in Convolutional Neural Networks,Unclassified,Missing Related Work and Comparisons,8.0
+27,MIDI-DDSP: Detailed Control of Musical Performance via Hierarchical Modeling,Reinforcement Learning and Control,Missing Related Work and Comparisons,8.0
+28,Meta-Learning with Fewer Tasks through Task Interpolation,Hyperparameter Optimization and Meta-Learning,Clarity and Readability Issues,8.0
+29,Minibatch vs Local SGD with Shuffling: Tight Convergence Bounds and Beyond,Optimization and Training Techniques,Methodological Concerns and Theoretical Justifications,8.0
+30,Natural Language Descriptions of Deep Visual Features,Reinforcement Learning and Control,Clarity and Readability Issues,8.0
+31,Neural Collapse Under MSE Loss: Proximity to and Dynamics on the Central Path,Adversarial Robustness and Security,Clarity and Readability Issues,7.0
+32,Neural Structured Prediction for Inductive Node Classification,Graph Neural Networks and Graph Theory,Methodological Concerns and Theoretical Justifications,8.5
+33,Non-Transferable Learning: A New Approach for Model Ownership Verification and Applicability Authorization,Self-Supervised Learning and Representation Learning,Clarity and Readability Issues,8.0
+34,Open-Set Recognition: A Good Closed-Set Classifier is All You Need,Computer Vision and 3D Modeling,Clarity and Readability Issues,7.333333333333333
+35,PiCO: Contrastive Label Disambiguation for Partial Label Learning,Unclassified,Missing Related Work and Comparisons,8.0
+36,Poisoning and Backdooring Contrastive Learning,Unclassified,Missing Related Work and Comparisons,8.0
+37,ProtoRes: Proto-Residual Network for Pose Authoring via Learned Inverse Kinematics,Unclassified,Experimental Weaknesses and Limitations,7.0
+38,Provably Filtering Exogenous Distractors using Multistep Inverse Dynamics,Reinforcement Learning and Control,Clarity and Readability Issues,8.0
+39,Pyraformer: Low-Complexity Pyramidal Attention for Long-Range Time Series Modeling and Forecasting,Transformers and Sequence Modeling,Clarity and Readability Issues,7.0
+40,RISP: Rendering-Invariant State Predictor with Differentiable Simulation and Rendering for Cross-Domain Parameter Estimation,"Simulation, Planning, and Agents",Experimental Weaknesses and Limitations,8.0
+41,Real-Time Neural Voice Camouflage,Audio and Speech Processing,Missing Related Work and Comparisons,8.0
+42,Representational Continuity for Unsupervised Continual Learning,Unclassified,Missing Related Work and Comparisons,8.0
+43,Resolving Training Biases via Influence-based Data Relabeling,Optimization and Training Techniques,Missing Related Work and Comparisons,7.0
+44,Sparse Communication via Mixed Distributions,Biological Applications in AI,Clarity and Readability Issues,7.333333333333333
+45,StyleAlign: Analysis and Applications of Aligned StyleGAN Models,Multitask and Transfer Learning,Clarity and Readability Issues,7.5
+46,The Hidden Convex Optimization Landscape of Regularized Two-Layer ReLU Networks: an Exact Characterization of Optimal Solutions,Optimization and Training Techniques,Methodological Concerns and Theoretical Justifications,8.0
+47,The Information Geometry of Unsupervised Reinforcement Learning,Reinforcement Learning and Control,Missing Related Work and Comparisons,8.0
+48,Transform2Act: Learning a Transform-and-Control Policy for Efficient Agent Design,Reinforcement Learning and Control,Missing Related Work and Comparisons,8.0
+49,Understanding over-squashing and bottlenecks on graphs via curvature,Graph Neural Networks and Graph Theory,Clarity and Readability Issues,8.5
+50,Unsupervised Vision-Language Grammar Induction with Shared Structure Modeling,Multimodal Learning and Vision-Language Models,Missing Related Work and Comparisons,8.0
+51,Variational Inference for Discriminative Learning with Generative Modeling of Feature Incompletion,Diffusion Models and Generative Modeling,Clarity and Readability Issues,6.25
+52,Vision-Based Manipulators Need to Also See from Their Hands,Reinforcement Learning and Control,Experimental Weaknesses and Limitations,8.0
+53,Weighted Training for Cross-Task Learning,Optimization and Training Techniques,Clarity and Readability Issues,7.5
+54,iLQR-VAE : control-based learning of input-driven dynamics with applications to neural data,Reinforcement Learning and Control,Clarity and Readability Issues,8.0

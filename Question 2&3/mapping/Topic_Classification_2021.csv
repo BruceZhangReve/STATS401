@@ -1,0 +1,54 @@
+Unnamed: 0,Title,Keywords,Classification
+0,A Distributional Approach to Controlled Text Generation,"Keywords: Controlled NLG, Pretrained Language Models, Bias in Language Models, Energy-Based Models, Information Geometry, Exponential Families",Reinforcement Learning and Control
+1,An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale,"Keywords: computer vision, image recognition, self-attention, transformer, large-scale training",Computer Vision and 3D Modeling
+2,Augmenting Physical Models with Deep Networks for Complex Dynamics Forecasting,"Keywords: spatio-temporal forecasting, deep learning, physics, differential equations, hybrid systems",Time Series and Temporal Modeling
+3,Co-Mixup: Saliency Guided Joint Mixup with Supermodular Diversity,"Keywords: Data Augmentation, Deep Learning, Supervised Learning, Discrete Optimization",Optimization and Training Techniques
+4,Complex Query Answering with Neural Link Predictors,"Keywords: neural link prediction, complex query answering",Unclassified
+5,Contrastive Explanations for Reinforcement Learning via Embedded Self Predictions,"Keywords: Explainable AI, Deep Reinforcement Learning",Reinforcement Learning and Control
+6,Coupled Oscillatory Recurrent Neural Network (coRNN): An accurate and (gradient) stable architecture for learning long time dependencies,"Keywords: RNNs, Oscillators, Gradient stability, Long-term dependencies",Unclassified
+7,Dataset Condensation with Gradient Matching,"Keywords: dataset condensation, data-efficient learning, image generation","Data Selection, Pruning, and Condensation"
+8,Deep symbolic regression: Recovering mathematical expressions from data via risk-seeking policy gradients,"Keywords: symbolic regression, reinforcement learning, automated machine learning",Reinforcement Learning and Control
+9,Deformable DETR: Deformable Transformers for End-to-End Object Detection,"Keywords: Efficient Attention Mechanism, Deformation Modeling, Multi-scale Representation, End-to-End Object Detection",Transformers and Sequence Modeling
+10,DiffWave: A Versatile Diffusion Model for Audio Synthesis,"Keywords: diffusion probabilistic models, audio synthesis, speech synthesis, generative models",Diffusion Models and Generative Modeling
+11,Do 2D GANs Know 3D Shape? Unsupervised 3D Shape Reconstruction from 2D Image GANs,"Keywords: Generative Adversarial Network, 3D Reconstruction",Unclassified
+12,EigenGame: PCA as a Nash Equilibrium,"Keywords: pca, principal components analysis, nash, games, eigendecomposition, svd, singular value decomposition",Unclassified
+13,End-to-end Adversarial Text-to-Speech,"Keywords: text-to-speech, speech synthesis, adversarial, GAN, end-to-end, feed-forward, generative model",Audio and Speech Processing
+14,Evolving Reinforcement Learning Algorithms,"Keywords: reinforcement learning, evolutionary algorithms, meta-learning, genetic programming",Reinforcement Learning and Control
+15,Federated Learning Based on Dynamic Regularization,"Keywords: Federated Learning, Deep Neural Networks, Distributed Optimization",Optimization and Training Techniques
+16,Free Lunch for Few-shot Learning: Distribution Calibration,"Keywords: few-shot learning, image classification, distribution estimation",Unclassified
+17,Geometry-aware Instance-reweighted Adversarial Training,Keywords: Adversarial robustness,Optimization and Training Techniques
+18,Getting a CLUE: A Method for Explaining Uncertainty Estimates,"Keywords: interpretability, uncertainty, explainability","Interpretability, Explainability, and Evaluation"
+19,Global Convergence of Three-layer Neural Networks in the Mean Field Regime,Keywords: deep learning theory,Unclassified
+20,Gradient Projection Memory for Continual Learning,"Keywords: Continual Learning, Representation Learning, Computer Vision, Deep learning",Computer Vision and 3D Modeling
+21,Growing Efficient Deep Networks by Structured Continuous Sparsification,"Keywords: deep learning, computer vision, network pruning, neural architecture search",Computer Vision and 3D Modeling
+22,How Neural Networks Extrapolate: From Feedforward to Graph Neural Networks,"Keywords: extrapolation, deep learning, out-of-distribution, graph neural networks, deep learning theory",Graph Neural Networks and Graph Theory
+23,Human-Level Performance in No-Press Diplomacy via Equilibrium Search,"Keywords: multi-agent systems, regret minimization, no-regret learning, game theory, reinforcement learning",Reinforcement Learning and Control
+24,Image GANs meet Differentiable Rendering for Inverse Graphics and Interpretable 3D Neural Rendering,"Keywords: Differentiable rendering, inverse graphics, GANs",Unclassified
+25,Improved Autoregressive Modeling with Distribution Smoothing,"Keywords: generative models, autoregressive models",Unclassified
+26,Iterated learning for emergent systematicity in VQA,"Keywords: iterated learning, cultural transmission, neural module network, clevr, shapes, vqa, visual question answering, systematic generalization, compositionality",Ensembling and Generalization
+27,Learning Cross-Domain Correspondence for Control with Dynamics Cycle-Consistency,"Keywords: self-supervised learning, robotics",Reinforcement Learning and Control
+28,Learning Generalizable Visual Representations via Interactive Gameplay,"Keywords: representation learning, deep reinforcement learning, computer vision",Reinforcement Learning and Control
+29,Learning Invariant Representations for Reinforcement Learning without Reconstruction,"Keywords: rich observations, bisimulation metrics, representation learning, state abstractions",Reinforcement Learning and Control
+30,Learning to Reach Goals via Iterated Supervised Learning,"Keywords: goal reaching, reinforcement learning, behavior cloning, goal-conditioned RL",Reinforcement Learning and Control
+31,MONGOOSE: A Learnable LSH Framework for Efficient Neural Network Training,"Keywords: Large-scale Deep Learning, Large-scale Machine Learning, Efficient Training, Randomized Algorithms",Optimization and Training Techniques
+32,Neural Synthesis of Binaural Speech From Mono Audio,"Keywords: binaural audio, sound spatialization, neural sound synthesis, binaural speech, speech processing, speech generation",Audio and Speech Processing
+33,On the mapping between Hopfield networks and Restricted Boltzmann Machines,"Keywords: Hopfield Networks, Restricted Boltzmann Machines, Statistical Physics",Unclassified
+34,Optimal Rates for Averaged Stochastic Gradient Descent under Neural Tangent Kernel Regime,"Keywords: stochastic gradient descent, two-layer neural network, over-parameterization, neural tangent kernel",Unclassified
+35,Parrot: Data-Driven Behavioral Priors for Reinforcement Learning,"Keywords: reinforcement learning, imitation learning",Reinforcement Learning and Control
+36,Randomized Automatic Differentiation,"Keywords: automatic differentiation, autodiff, backprop, deep learning, pdes, stochastic optimization",Optimization and Training Techniques
+37,Rao-Blackwellizing the Straight-Through Gumbel-Softmax Gradient Estimator,"Keywords: gumbel, softmax, gumbel-softmax, straight-through, straightthrough, rao, rao-blackwell",Biological Applications in AI
+38,Rethinking Architecture Selection in Differentiable NAS,-''-,Unclassified
+39,Rethinking Attention with Performers,"Keywords: performer, transformer, attention, softmax, approximation, linear, bert, bidirectional, unidirectional, orthogonal, random, features, FAVOR, kernel, generalized, sparsity, reformer, linformer, protein, trembl, uniprot",Transformers and Sequence Modeling
+40,Rethinking the Role of Gradient-based Attribution Methods for Model Interpretability,"Keywords: Interpretability, saliency maps, score-matching","Interpretability, Explainability, and Evaluation"
+41,SMiRL: Surprise Minimizing Reinforcement Learning in Unstable Environments,Keywords: Reinforcement learning,Reinforcement Learning and Control
+42,Scalable Learning and MAP Inference for Nonsymmetric Determinantal Point Processes,"Keywords: determinantal point processes, unsupervised learning, representation learning, submodular optimization",Optimization and Training Techniques
+43,Score-Based Generative Modeling through Stochastic Differential Equations,"Keywords: generative models, score-based generative models, stochastic differential equations, score matching, diffusion",Diffusion Models and Generative Modeling
+44,Self-training For Few-shot Transfer Across Extreme Task Differences,"Keywords: few-shot learning, self-training, cross-domain few-shot learning",Optimization and Training Techniques
+45,SenSeI: Sensitive Set Invariance for Enforcing Individual Fairness,"Keywords: Algorithmic fairness, invariance","Fairness, Ethics, and Privacy"
+46,Share or Not? Learning to Schedule Language-Specific Capacity for Multilingual Translation,"Keywords: language-specific modeling, conditional computation, multilingual translation, multilingual transformer",Transformers and Sequence Modeling
+47,Theoretical Analysis of Self-Training with Deep Networks on Unlabeled Data,"Keywords: deep learning theory, domain adaptation theory, unsupervised learning theory, semi-supervised learning theory",Optimization and Training Techniques
+48,Towards Nonlinear Disentanglement in Natural Data with Temporal Sparse Coding,"Keywords: disentanglement, independent component analysis, natural scene statistics",Time Series and Temporal Modeling
+49,VCNet and Functional Targeted Regularization For Learning Causal Effects of Continuous Treatments,"Keywords: causal inference, continuous treatment effect, doubly robustness",Causal Discovery and Inference in Reinforcement Learning
+50,What Matters for On-Policy Deep Actor-Critic Methods? A Large-Scale Study,"Keywords: Reinforcement learning, continuous control",Reinforcement Learning and Control
+51,When Do Curricula Work?,"Keywords: Curriculum Learning, Understanding Deep Learning, Empirical Investigation",Unclassified
+52,Why Are Convolutional Nets More Sample-Efficient than Fully-Connected Nets?,"Keywords: sample complexity separation, equivariance, convolutional neural networks, fully-connected",Unclassified
