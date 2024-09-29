@@ -1,0 +1,49 @@
+,Title,Topics,Weakness,Review_Rating
+0,A Closer Look at Deep Policy Gradients,Unclassified,Missing Related Work and Comparisons,7.333333333333333
+1,A Generalized Training Approach for Multiagent Learning,Optimization and Training Techniques,Clarity and Readability Issues,6.75
+2,A Theory of Usable Information under Computational Constraints,Biological Applications in AI,Clarity and Readability Issues,8.0
+3,Adversarial Training and Provable Defenses: Bridging the Gap,Optimization and Training Techniques,Clarity and Readability Issues,7.333333333333333
+4,BackPACK: Packing more into Backprop,Unclassified,Clarity and Readability Issues,8.0
+5,Building Deep Equivariant Capsule Networks,Unclassified,Methodological Concerns and Theoretical Justifications,7.0
+6,CATER: A diagnostic dataset for Compositional Actions & TEmporal Reasoning,Time Series and Temporal Modeling,Experimental Weaknesses and Limitations,6.75
+7,Causal Discovery with Reinforcement Learning,Reinforcement Learning and Control,Missing Related Work and Comparisons,7.0
+8,Comparing Rewinding and Fine-tuning in Neural Network Pruning,Unclassified,Experimental Weaknesses and Limitations,7.333333333333333
+9,Contrastive Learning of Structured World Models,Unclassified,Clarity and Readability Issues,8.0
+10,Convolutional Conditional Neural Processes,Unclassified,Clarity and Readability Issues,6.0
+11,Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning,Unclassified,Clarity and Readability Issues,7.333333333333333
+12,Data-dependent Gaussian Prior Objective for Language Generation,Unclassified,Missing Related Work and Comparisons,8.0
+13,"Deep Batch Active Learning by Diverse, Uncertain Gradient Lower Bounds","Active, Continual, and Meta Learning",Missing Related Work and Comparisons,7.333333333333333
+14,Differentiable Reasoning over a Virtual Knowledge Base,Unclassified,Missing Related Work and Comparisons,8.0
+15,Dynamics-Aware Unsupervised Discovery of Skills,Unclassified,Missing Related Work and Comparisons,8.0
+16,Fast Task Inference with Variational Intrinsic Successor Features,Causal Discovery and Inference in Reinforcement Learning,Clarity and Readability Issues,7.333333333333333
+17,Federated Learning with Matched Averaging,Federated Learning and Privacy,Clarity and Readability Issues,5.75
+18,GenDICE: Generalized Offline Estimation of Stationary Values,Unclassified,Clarity and Readability Issues,8.0
+19,Geometric Analysis of Nonconvex Optimization Landscapes for Overcomplete Learning,Optimization and Training Techniques,Methodological Concerns and Theoretical Justifications,7.0
+20,Gradient Descent Maximizes the Margin of Homogeneous Neural Networks,Unclassified,Methodological Concerns and Theoretical Justifications,8.0
+21,GraphZoom: A Multi-level Spectral Approach for Accurate and Scalable Graph Embedding,Graph Neural Networks and Graph Theory,Clarity and Readability Issues,7.333333333333333
+22,Harnessing Structures for Value-Based Planning and Reinforcement Learning,Reinforcement Learning and Control,Clarity and Readability Issues,7.333333333333333
+23,High Fidelity Speech Synthesis with Adversarial Networks,Audio and Speech Processing,Clarity and Readability Issues,7.333333333333333
+24,Implementation Matters in Deep RL: A Case Study on PPO and TRPO,Unclassified,Missing Related Work and Comparisons,6.75
+25,Intrinsically Motivated Discovery of Diverse Patterns in Self-Organizing Systems,Unclassified,Experimental Weaknesses and Limitations,5.5
+26,Learning Hierarchical Discrete Linguistic Units from Visually-Grounded Speech,Self-Supervised Learning and Representation Learning,Experimental Weaknesses and Limitations,5.75
+27,Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks,Biological Applications in AI,Missing Related Work and Comparisons,7.0
+28,Mathematical Reasoning in Latent Space,Mathematical Reasoning and Theorem Proving,Experimental Weaknesses and Limitations,8.0
+29,Meta-Learning with Warped Gradient Descent,Multitask and Transfer Learning,Clarity and Readability Issues,8.0
+30,Meta-Q-Learning,Optimization and Training Techniques,Clarity and Readability Issues,5.75
+31,Mirror-Generative Neural Machine Translation,Unclassified,Clarity and Readability Issues,8.0
+32,Mogrifier LSTM,Unclassified,Clarity and Readability Issues,7.333333333333333
+33,Neural Network Branching for Neural Network Verification,Unclassified,Missing Related Work and Comparisons,7.333333333333333
+34,On the Convergence of FedAvg on Non-IID Data,Unclassified,Missing Related Work and Comparisons,7.333333333333333
+35,Optimal Strategies Against Generative Attacks,Biological Applications in AI,Clarity and Readability Issues,8.0
+36,Posterior sampling for multi-agent reinforcement learning: solving extensive games with imperfect information,Reinforcement Learning and Control,Clarity and Readability Issues,6.666666666666667
+37,Principled Weight Initialization for Hypernetworks,Unclassified,Experimental Weaknesses and Limitations,8.0
+38,RNA Secondary Structure Prediction By Learning Unrolled Algorithms,Unclassified,Experimental Weaknesses and Limitations,7.5
+39,Reformer: The Efficient Transformer,Transformers and Sequence Modeling,Clarity and Readability Issues,7.333333333333333
+40,Restricting the Flow: Information Bottlenecks for Attribution,Biological Applications in AI,Clarity and Readability Issues,8.0
+41,Rotation-invariant clustering of neuronal responses in primary visual cortex,Clustering and Dimensionality Reduction,Experimental Weaknesses and Limitations,8.0
+42,SEED RL: Scalable and Efficient Deep-RL with Accelerated Central Inference,Reinforcement Learning and Control,Experimental Weaknesses and Limitations,7.333333333333333
+43,Target-Embedding Autoencoders for Supervised Representation Learning,Self-Supervised Learning and Representation Learning,Missing Related Work and Comparisons,7.0
+44,Understanding and Robustifying Differentiable Architecture Search,Unclassified,Experimental Weaknesses and Limitations,8.0
+45,Watch the Unobserved: A Simple Approach to Parallelizing Monte Carlo Tree Search,Unclassified,Clarity and Readability Issues,7.333333333333333
+46,Why Gradient Clipping Accelerates Training: A Theoretical Justification for Adaptivity,Optimization and Training Techniques,Methodological Concerns and Theoretical Justifications,8.0
+47,Your classifier is secretly an energy based model and you should treat it like one,Unclassified,Clarity and Readability Issues,7.333333333333333
