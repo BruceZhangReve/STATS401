@@ -1,0 +1,26 @@
+nav{
+    background-color: #c7ea8d ;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+}
+path {
+    stroke: #b08dea;
+    stroke-width: 2px;
+    fill: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my_dataviz {
+    width: 45%; 
+    height: 300px;
+}
+
+.text-container {
+    width: 100%; /* 根据需要调整宽度 */
+    padding: 5px;
+}

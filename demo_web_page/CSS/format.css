@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* 主内容样式 */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f0f0f0; /* 将背景设置为灰色 */
+    flex-grow: 1;
+    min-height: 100vh; /* 确保内容区域的高度覆盖整个屏幕 */
+    box-sizing: border-box;
+    display: grid; /* 使用Grid布局 */
+    grid-template-columns: repeat(2, 1fr); /* 两列布局，每列平分 */
+    grid-gap: 20px; /* 设置列与列之间的间距 */
+}
+
+/* 白底box样式 */
+.box {
+    background-color: white; /* 白色背景 */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    border-radius: 8px; /* 圆角 */
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+#my_dataviz {
+    width: 100%; /* 让图表宽度随容器宽度变化 */
+    height: 400px; /* 设置图表高度 */
+}
+
+.text-container {
+    width: 100%; /* 根据需要调整宽度 */
+    padding: 5px;
+}
