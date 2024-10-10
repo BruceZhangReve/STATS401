@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Dashboard</title>
+
+    <!-- Load D3.js v7 and D3 Cloud -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+
+    <!-- Link to the custom CSS file -->
+    <link rel="stylesheet" href="./CSS/main.CSS">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;  /* Stack visualizations vertically */
+            padding: 20px;
+        }
+        .visualization {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px; /* Add space between rows */
+            height: 1000px;  /* Ensure enough height for each visualization */
+        }
+        svg {
+            width: 100%;
+            height: 100%;  /* Ensure SVG takes the full height and width of the container */
+        }
+    </style>
+</head>
+<body>
+
+<h2>D3.js Interactive Dashboard</h2>
+<div class="dashboard">
+    <!-- Visualization 1 -->
+    <div class="visualization">
+        <h3>Hot Topics in 5 Years</h3>
+        <div id="vis1"></div>
+    </div>
+
+    <!-- Visualization 2 -->
+    <div class="visualization">
+        <h3>Trend for each Topic</h3>
+        <div>
+            <label for="wordCount">Number of Topics: </label>
+            <input type="range" id="wordCount" name="wordCount" min="1" max="50" value="10" oninput="updateWordCount(this.value)">
+            <span id="wordCountDisplay">10</span>
+        </div>
+        <div id="vis2"></div>
+    </div>
+
+    <!-- Visualization 3 -->
+    <div class="visualization">
+        <h3>Average Rating</h3>
+        <div id="vis3"></div>
+    </div>
+
+    <!-- Visualization 4 -->
+    <div class="visualization">
+        <h3>Paper Weaknesses</h3>
+        <div id="vis4"></div>
+    </div>
+</div>
+
+<!-- Load the combined vis.js file with interactivity -->
+<script src="./vis.js"></script>
+
+</body>
+</html>

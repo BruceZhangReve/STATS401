@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Center heading */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #0056b3;
+}
+
+/* Styling for each visualization's container */
+.dashboard {
+    display: flex;
+    flex-direction: column; /* Stack visualizations vertically */
+    padding: 20px;
+    margin: 0 auto; /* Center the dashboard */
+    max-width: 1400px; /* Max width to avoid too wide layout */
+}
+
+/* Individual visualization styling */
+.visualization {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 30px; /* Space between visualizations */
+    border-radius: 8px;
+    position: relative;
+    height: 600px; /* Adjust height for each visualization */
+}
+
+/* Heading for each visualization */
+.visualization h3 {
+    font-size: 1.5em;
+    color: #0056b3;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the range slider */
+input[type="range"] {
+    width: 300px;
+    margin: 10px 0;
+}
+
+#wordCountDisplay {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* SVG Styling to fit the visualizations */
+svg {
+    width: 100%;
+    height: 100%; /* Ensure SVG takes the full height and width of the container */
+}
+
+/* Styling the slider container */
+.visualization label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #0056b3;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #0056b3;
+    cursor: pointer;
+}
+
+/* Visual hover effect on graphs */
+.visualization:hover {
+    box-shadow: 0px 0px 12px rgba(0, 86, 179, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .visualization {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    svg {
+        height: 400px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
