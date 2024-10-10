@@ -1,0 +1,333 @@
+Weakness,Review_Rating,Topics
+Missing Related Work and Comparisons,7.333333333333333,Unclassified
+Clarity and Readability Issues,6.75,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Biological Applications in AI
+Clarity and Readability Issues,7.333333333333333,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Unclassified
+Methodological Concerns and Theoretical Justifications,7.0,Unclassified
+Experimental Weaknesses and Limitations,6.75,Time Series and Temporal Modeling
+Missing Related Work and Comparisons,7.0,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,7.333333333333333,Unclassified
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,6.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Unclassified
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,7.333333333333333,"Active, Continual, and Meta Learning"
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Causal Discovery and Inference in Reinforcement Learning
+Clarity and Readability Issues,5.75,Federated Learning and Privacy
+Clarity and Readability Issues,8.0,Unclassified
+Methodological Concerns and Theoretical Justifications,7.0,Optimization and Training Techniques
+Methodological Concerns and Theoretical Justifications,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,7.333333333333333,Reinforcement Learning and Control
+Clarity and Readability Issues,7.333333333333333,Audio and Speech Processing
+Missing Related Work and Comparisons,6.75,Unclassified
+Experimental Weaknesses and Limitations,5.5,Unclassified
+Experimental Weaknesses and Limitations,5.75,Self-Supervised Learning and Representation Learning
+Missing Related Work and Comparisons,7.0,Biological Applications in AI
+Experimental Weaknesses and Limitations,8.0,Mathematical Reasoning and Theorem Proving
+Clarity and Readability Issues,8.0,Multitask and Transfer Learning
+Clarity and Readability Issues,5.75,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Unclassified
+Missing Related Work and Comparisons,7.333333333333333,Unclassified
+Missing Related Work and Comparisons,7.333333333333333,Unclassified
+Clarity and Readability Issues,8.0,Biological Applications in AI
+Clarity and Readability Issues,6.666666666666667,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,8.0,Unclassified
+Experimental Weaknesses and Limitations,7.5,Unclassified
+Clarity and Readability Issues,7.333333333333333,Transformers and Sequence Modeling
+Clarity and Readability Issues,8.0,Biological Applications in AI
+Experimental Weaknesses and Limitations,8.0,Clustering and Dimensionality Reduction
+Experimental Weaknesses and Limitations,7.333333333333333,Reinforcement Learning and Control
+Missing Related Work and Comparisons,7.0,Self-Supervised Learning and Representation Learning
+Experimental Weaknesses and Limitations,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Unclassified
+Methodological Concerns and Theoretical Justifications,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,7.333333333333333,Unclassified
+Experimental Weaknesses and Limitations,7.333333333333333,Reinforcement Learning and Control
+Missing Related Work and Comparisons,7.0,Computer Vision and 3D Modeling
+Clarity and Readability Issues,8.0,Time Series and Temporal Modeling
+Clarity and Readability Issues,7.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Reinforcement Learning and Control
+Clarity and Readability Issues,7.25,Unclassified
+Experimental Weaknesses and Limitations,8.333333333333334,"Data Selection, Pruning, and Condensation"
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Transformers and Sequence Modeling
+Missing Related Work and Comparisons,7.6,Diffusion Models and Generative Modeling
+Missing Related Work and Comparisons,7.666666666666667,Unclassified
+Missing Related Work and Comparisons,7.666666666666667,Unclassified
+Clarity and Readability Issues,7.5,Audio and Speech Processing
+Clarity and Readability Issues,7.333333333333333,Reinforcement Learning and Control
+Clarity and Readability Issues,7.25,Optimization and Training Techniques
+Missing Related Work and Comparisons,7.0,Unclassified
+Missing Related Work and Comparisons,7.666666666666667,Optimization and Training Techniques
+Clarity and Readability Issues,6.75,"Interpretability, Explainability, and Evaluation"
+Missing Related Work and Comparisons,7.5,Unclassified
+Clarity and Readability Issues,7.5,Computer Vision and 3D Modeling
+Clarity and Readability Issues,7.25,Computer Vision and 3D Modeling
+Missing Related Work and Comparisons,8.75,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,7.5,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,7.333333333333333,Unclassified
+Clarity and Readability Issues,7.25,Unclassified
+Clarity and Readability Issues,7.0,Ensembling and Generalization
+Clarity and Readability Issues,7.75,Reinforcement Learning and Control
+Clarity and Readability Issues,8.25,Reinforcement Learning and Control
+Clarity and Readability Issues,7.666666666666667,Reinforcement Learning and Control
+Clarity and Readability Issues,7.5,Reinforcement Learning and Control
+Clarity and Readability Issues,7.25,Optimization and Training Techniques
+Clarity and Readability Issues,7.666666666666667,Audio and Speech Processing
+Missing Related Work and Comparisons,8.0,Unclassified
+Clarity and Readability Issues,7.6,Unclassified
+Clarity and Readability Issues,7.5,Reinforcement Learning and Control
+Missing Related Work and Comparisons,7.5,Optimization and Training Techniques
+Clarity and Readability Issues,7.333333333333333,Biological Applications in AI
+Missing Related Work and Comparisons,7.75,Unclassified
+Clarity and Readability Issues,7.5,Transformers and Sequence Modeling
+Clarity and Readability Issues,7.5,"Interpretability, Explainability, and Evaluation"
+Missing Related Work and Comparisons,7.25,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Methodological Concerns and Theoretical Justifications,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,7.25,Optimization and Training Techniques
+Clarity and Readability Issues,7.0,"Fairness, Ethics, and Privacy"
+Experimental Weaknesses and Limitations,7.75,Transformers and Sequence Modeling
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.25,Time Series and Temporal Modeling
+Clarity and Readability Issues,6.666666666666667,Causal Discovery and Inference in Reinforcement Learning
+Missing Related Work and Comparisons,8.0,Reinforcement Learning and Control
+Methodological Concerns and Theoretical Justifications,7.666666666666667,Unclassified
+Clarity and Readability Issues,7.25,Unclassified
+Experimental Weaknesses and Limitations,8.666666666666666,Biological Applications in AI
+Clarity and Readability Issues,8.0,Graph Neural Networks and Graph Theory
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Transformers and Sequence Modeling
+Clarity and Readability Issues,9.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,6.666666666666667,Transformers and Sequence Modeling
+Clarity and Readability Issues,7.5,Unclassified
+Clarity and Readability Issues,8.5,Biological Applications in AI
+Experimental Weaknesses and Limitations,8.0,Unclassified
+Methodological Concerns and Theoretical Justifications,8.0,Diffusion Models and Generative Modeling
+Missing Related Work and Comparisons,8.0,Multimodal Learning and Vision-Language Models
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,4.0,Unclassified
+Clarity and Readability Issues,8.666666666666666,Graph Neural Networks and Graph Theory
+Missing Related Work and Comparisons,5.0,Unclassified
+Missing Related Work and Comparisons,6.5,Model Compression and Quantization
+Missing Related Work and Comparisons,8.666666666666666,Statistical Theory and High-Dimensional Data
+Clarity and Readability Issues,8.0,Multitask and Transfer Learning
+Missing Related Work and Comparisons,8.0,Unclassified
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Diffusion Models and Generative Modeling
+Methodological Concerns and Theoretical Justifications,8.0,Federated Learning and Privacy
+Clarity and Readability Issues,8.0,Unclassified
+Experimental Weaknesses and Limitations,7.333333333333333,Large Language Models and Language Modeling
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Hyperparameter Optimization and Meta-Learning
+Methodological Concerns and Theoretical Justifications,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,7.0,Adversarial Robustness and Security
+Methodological Concerns and Theoretical Justifications,8.5,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,8.0,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,7.333333333333333,Computer Vision and 3D Modeling
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Unclassified
+Experimental Weaknesses and Limitations,7.0,Unclassified
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,7.0,Transformers and Sequence Modeling
+Experimental Weaknesses and Limitations,8.0,"Simulation, Planning, and Agents"
+Missing Related Work and Comparisons,8.0,Audio and Speech Processing
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,7.0,Optimization and Training Techniques
+Clarity and Readability Issues,7.333333333333333,Biological Applications in AI
+Clarity and Readability Issues,7.5,Multitask and Transfer Learning
+Methodological Concerns and Theoretical Justifications,8.0,Optimization and Training Techniques
+Missing Related Work and Comparisons,8.0,Reinforcement Learning and Control
+Missing Related Work and Comparisons,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.5,Graph Neural Networks and Graph Theory
+Missing Related Work and Comparisons,8.0,Multimodal Learning and Vision-Language Models
+Clarity and Readability Issues,6.25,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,7.5,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Missing Related Work and Comparisons,5.0,Dataset Condensation and Distillation
+Experimental Weaknesses and Limitations,8.666666666666666,"Interpretability, Explainability, and Evaluation"
+Methodological Concerns and Theoretical Justifications,7.0,Unclassified
+Methodological Concerns and Theoretical Justifications,6.666666666666667,Biological Applications in AI
+Methodological Concerns and Theoretical Justifications,8.0,Ensembling and Generalization
+Missing Related Work and Comparisons,8.0,Computer Vision and 3D Modeling
+Clarity and Readability Issues,8.0,Transformers and Sequence Modeling
+Clarity and Readability Issues,8.666666666666666,Optimization and Training Techniques
+Missing Related Work and Comparisons,6.0,Unclassified
+Experimental Weaknesses and Limitations,8.0,Climate and Weather Modeling
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,7.0,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,7.0,Transformers and Sequence Modeling
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,7.0,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,7.333333333333333,Time Series and Temporal Modeling
+Clarity and Readability Issues,8.0,"Interpretability, Explainability, and Evaluation"
+Clarity and Readability Issues,7.5,Unclassified
+Missing Related Work and Comparisons,6.75,Diffusion Models and Generative Modeling
+Methodological Concerns and Theoretical Justifications,7.5,Reinforcement Learning and Control
+Experimental Weaknesses and Limitations,7.333333333333333,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,7.0,Optimization and Training Techniques
+Missing Related Work and Comparisons,7.333333333333333,Unclassified
+Clarity and Readability Issues,7.5,Biological Applications in AI
+Missing Related Work and Comparisons,7.333333333333333,Transformers and Sequence Modeling
+Missing Related Work and Comparisons,7.5,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Simulation and Planning in Robotics
+Methodological Concerns and Theoretical Justifications,6.75,Unclassified
+Clarity and Readability Issues,8.666666666666666,Unclassified
+Clarity and Readability Issues,8.5,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,8.5,Clustering and Dimensionality Reduction
+Experimental Weaknesses and Limitations,7.0,Unclassified
+Clarity and Readability Issues,7.25,Large Language Models and Language Modeling
+Missing Related Work and Comparisons,7.0,Diffusion Models and Generative Modeling
+Missing Related Work and Comparisons,7.25,Unclassified
+Experimental Weaknesses and Limitations,7.333333333333333,Transformers and Sequence Modeling
+Clarity and Readability Issues,8.666666666666666,Reinforcement Learning and Control
+Clarity and Readability Issues,7.5,Causal Discovery and Inference in Reinforcement Learning
+Clarity and Readability Issues,8.0,Causal Discovery and Inference in Reinforcement Learning
+Clarity and Readability Issues,7.0,Unclassified
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Missing Related Work and Comparisons,8.0,Optimization and Training Techniques
+Experimental Weaknesses and Limitations,7.0,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,8.666666666666666,Unclassified
+Experimental Weaknesses and Limitations,7.666666666666667,Biological Applications in AI
+Clarity and Readability Issues,8.0,Biological Applications in AI
+Experimental Weaknesses and Limitations,8.0,Clustering and Dimensionality Reduction
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,6.333333333333333,Reinforcement Learning and Control
+Clarity and Readability Issues,7.75,Self-Supervised Learning and Representation Learning
+Missing Related Work and Comparisons,7.5,Unclassified
+Missing Related Work and Comparisons,7.25,Federated Learning and Privacy
+Experimental Weaknesses and Limitations,7.333333333333333,Graph Neural Networks and Graph Theory
+Experimental Weaknesses and Limitations,8.0,Unclassified
+Methodological Concerns and Theoretical Justifications,8.666666666666666,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,8.666666666666666,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,6.333333333333333,Unclassified
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Methodological Concerns and Theoretical Justifications,8.0,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,8.0,Dataset Condensation and Distillation
+Clarity and Readability Issues,7.6,Large Language Models and Language Modeling
+Clarity and Readability Issues,8.666666666666666,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,8.0,Transformers and Sequence Modeling
+Methodological Concerns and Theoretical Justifications,6.75,Ensembling and Generalization
+Clarity and Readability Issues,8.0,Unclassified
+Missing Related Work and Comparisons,8.0,Unclassified
+Missing Related Work and Comparisons,8.666666666666666,Biological Applications in AI
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Methodological Concerns and Theoretical Justifications,6.0,Time Series and Temporal Modeling
+Missing Related Work and Comparisons,8.0,Unclassified
+Methodological Concerns and Theoretical Justifications,7.333333333333333,Multimodal Learning and Vision-Language Models
+Clarity and Readability Issues,7.0,Reinforcement Learning and Control
+Methodological Concerns and Theoretical Justifications,8.0,Computer Vision and 3D Modeling
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,6.5,Graph Neural Networks and Graph Theory
+Clarity and Readability Issues,7.25,Unclassified
+Methodological Concerns and Theoretical Justifications,9.0,Biological Applications in AI
+Missing Related Work and Comparisons,7.333333333333333,Unclassified
+Clarity and Readability Issues,8.0,Transformers and Sequence Modeling
+Missing Related Work and Comparisons,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,9.333333333333334,Unclassified
+Clarity and Readability Issues,7.0,Unclassified
+Experimental Weaknesses and Limitations,8.0,Large Language Models and Language Modeling
+Clarity and Readability Issues,7.0,Optimization and Training Techniques
+Clarity and Readability Issues,7.333333333333333,Biological Applications in AI
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Transformers and Sequence Modeling
+Clarity and Readability Issues,6.5,"Interpretability, Explainability, and Evaluation"
+Clarity and Readability Issues,7.0,Large Language Models and Language Modeling
+Clarity and Readability Issues,6.75,Unclassified
+Methodological Concerns and Theoretical Justifications,7.333333333333333,Optimization and Training Techniques
+Clarity and Readability Issues,7.75,Large Language Models and Language Modeling
+Clarity and Readability Issues,7.333333333333333,"Fairness, Ethics, and Privacy"
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Unclassified
+Experimental Weaknesses and Limitations,8.5,Graph Neural Networks and Graph Theory
+Experimental Weaknesses and Limitations,8.5,Large Language Models and Language Modeling
+Clarity and Readability Issues,6.5,Computer Vision and 3D Modeling
+Missing Related Work and Comparisons,8.0,Unclassified
+Clarity and Readability Issues,8.0,Climate and Weather Modeling
+Clarity and Readability Issues,8.0,Diffusion Models and Generative Modeling
+Need for Additional Analysis or Discussion,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,8.5,Unclassified
+Clarity and Readability Issues,6.0,Reinforcement Learning and Control
+Clarity and Readability Issues,7.0,Program Synthesis and Theorem Proving
+Missing Related Work and Comparisons,7.0,Large Language Models and Language Modeling
+Experimental Weaknesses and Limitations,7.333333333333333,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,8.0,Graph Neural Networks and Graph Theory
+Methodological Concerns and Theoretical Justifications,7.333333333333333,Causal Discovery and Inference in Reinforcement Learning
+Missing Related Work and Comparisons,8.5,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,8.0,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,7.25,Unclassified
+Missing Related Work and Comparisons,7.333333333333333,Graph Neural Networks and Graph Theory
+Missing Related Work and Comparisons,7.5,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,6.75,Medical and Biological Applications
+Clarity and Readability Issues,7.5,"Active, Continual, and Meta Learning"
+Methodological Concerns and Theoretical Justifications,7.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,7.5,Optimization and Training Techniques
+Missing Related Work and Comparisons,7.333333333333333,Optimization and Training Techniques
+Experimental Weaknesses and Limitations,8.0,"Interpretability, Explainability, and Evaluation"
+Experimental Weaknesses and Limitations,7.0,Optimization and Training Techniques
+Clarity and Readability Issues,8.0,Large Language Models and Language Modeling
+Clarity and Readability Issues,7.5,Program Synthesis and Theorem Proving
+Experimental Weaknesses and Limitations,6.8,Large Language Models and Language Modeling
+Clarity and Readability Issues,8.5,Transformers and Sequence Modeling
+Clarity and Readability Issues,8.0,Time Series and Temporal Modeling
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,7.5,Reinforcement Learning and Control
+Missing Related Work and Comparisons,7.333333333333333,Biological Applications in AI
+Methodological Concerns and Theoretical Justifications,8.0,Diffusion Models and Generative Modeling
+Experimental Weaknesses and Limitations,7.333333333333333,Large Language Models and Language Modeling
+Experimental Weaknesses and Limitations,7.0,Large Language Models and Language Modeling
+Clarity and Readability Issues,7.5,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Missing Related Work and Comparisons,7.25,Large Language Models and Language Modeling
+Missing Related Work and Comparisons,9.0,Unclassified
+Unclassified,8.0,Meta Programming and Multi-Agent Systems
+Experimental Weaknesses and Limitations,6.75,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,8.0,Large Language Models and Language Modeling
+Experimental Weaknesses and Limitations,9.333333333333334,Diffusion Models and Generative Modeling
+Missing Related Work and Comparisons,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,8.0,Optimization and Training Techniques
+Experimental Weaknesses and Limitations,7.333333333333333,"Data Selection, Pruning, and Condensation"
+Experimental Weaknesses and Limitations,8.0,Unclassified
+Experimental Weaknesses and Limitations,8.0,Transformers and Sequence Modeling
+Clarity and Readability Issues,4.5,Large Language Models and Language Modeling
+Methodological Concerns and Theoretical Justifications,7.333333333333333,Ensembling and Generalization
+Figures and Visual Aids Improvement,8.0,Federated Learning and Privacy
+Clarity and Readability Issues,8.0,Unclassified
+Clarity and Readability Issues,7.333333333333333,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Reinforcement Learning and Control
+Clarity and Readability Issues,8.0,Diffusion Models and Generative Modeling
+Clarity and Readability Issues,7.333333333333333,Self-Supervised Learning and Representation Learning
+Clarity and Readability Issues,7.5,Unclassified
+Missing Related Work and Comparisons,8.0,Optimization and Training Techniques
+Missing Related Work and Comparisons,7.333333333333333,Large Language Models and Language Modeling
+Methodological Concerns and Theoretical Justifications,8.0,"Simulation, Planning, and Agents"
+Experimental Weaknesses and Limitations,6.25,Software Engineering and Code Understanding
+Evaluation Metrics and Baselines,8.0,Large Language Models and Language Modeling
+Experimental Weaknesses and Limitations,7.5,Self-Reflection and Self-Alignment in LLMs
+Experimental Weaknesses and Limitations,8.0,Transformers and Sequence Modeling
+Clarity and Readability Issues,6.75,Clustering and Dimensionality Reduction
+Clarity and Readability Issues,9.0,"Interpretability, Explainability, and Evaluation"
+Clarity and Readability Issues,8.0,Quantum Computing and Topological Data Analysis
+Clarity and Readability Issues,7.75,"Data Selection, Pruning, and Condensation"
+Experimental Weaknesses and Limitations,7.0,Large Language Models and Language Modeling
+Positive Feedback on Novelty and Contributions,8.0,Diffusion Models and Generative Modeling
+Methodological Concerns and Theoretical Justifications,7.0,"Fairness, Ethics, and Privacy"
+Methodological Concerns and Theoretical Justifications,7.5,Uncertainty Estimation and Validation
+Experimental Weaknesses and Limitations,8.0,Transformers and Sequence Modeling
+Experimental Weaknesses and Limitations,7.0,Diffusion Models and Generative Modeling
+Missing Related Work and Comparisons,7.333333333333333,Audio and Speech Processing

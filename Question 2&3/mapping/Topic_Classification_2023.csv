@@ -1,0 +1,91 @@
+Unnamed: 0,Title,Keywords,Classification
+0,3D generation on ImageNet,"Keywords: 3d-generation, gans, generative adversarial networks, knowledge distillation, nerf, stylegan, radiance fields, volume rendering",Dataset Condensation and Distillation
+1,A Call to Reflect on Evaluation Practices for Failure Detection in Image Classification,"Keywords: failure detection, out-of-distribution detection, predictive uncertainty quantification, selective classification, robustness, method evaluation","Interpretability, Explainability, and Evaluation"
+2,A Kernel Perspective of Skip Connections in Convolutional Networks,-''-,Unclassified
+3,Addressing Parameter Choice Issues in Unsupervised Domain Adaptation by Aggregation,"Keywords: Domain adaptation, parameter choice, model selection, aggregation, importance weighting",Biological Applications in AI
+4,Agree to Disagree: Diversity through Disagreement for Better Transferability,"Keywords: OOD generalization, Diversity, Ensemble",Ensembling and Generalization
+5,Aligning Model and Macaque Inferior Temporal Cortex Representations Improves Model-to-Human Behavioral Alignment and Adversarial Robustness,"Keywords: Computer Vision, Primate Vision, Adversarial Robustness, Behavioral Alignment, Inferior Temporal Cortex",Computer Vision and 3D Modeling
+6,AutoGT: Automated Graph Transformer Architecture Search,-''-,Transformers and Sequence Modeling
+7,Betty: An Automatic Differentiation Library for Multilevel Optimization,"Keywords: Multilevel Optimization, Automatic Differentiation, Bilevel Optimization, Meta Learning, Software Library",Optimization and Training Techniques
+8,Clean-image Backdoor: Attacking Multi-label Models with Poisoned Labels Only,-''-,Unclassified
+9,Compressing multidimensional weather and climate data into neural networks,"Keywords: Weather and climate data, Compression",Climate and Weather Modeling
+10,Conditional Antibody Design as 3D Equivariant Graph Translation,"Keywords: conditional antibody generation, equivariant, multi-channel attention",Unclassified
+11,Confidence-Conditioned Value Functions for Offline Reinforcement Learning,"Keywords: reinforcement learning, offline reinforcement learning, ensembles, adaptation",Reinforcement Learning and Control
+12,Confidential-PROFITT: Confidential PROof of FaIr Training of Trees,"Keywords: Fairness, Audit, Confidentiality, Zero-Knowledge Proof",Optimization and Training Techniques
+13,Crossformer: Transformer Utilizing Cross-Dimension Dependency for Multivariate Time Series Forecasting,"Keywords: Transformer, multivariate time series forecasting, deep learning",Transformers and Sequence Modeling
+14,DaxBench: Benchmarking Deformable Object Manipulation with Differentiable Physics,"Keywords: deformable object manipulation, differentiable physics, benchmark",Unclassified
+15,Dichotomy of Control: Separating What You Can Control from What You Cannot,"Keywords: Offline reinforcement learning, return-conditioned supervised learning, stochastic environments, decision transformer",Reinforcement Learning and Control
+16,Do We Really Need Complicated Model Architectures For Temporal Networks?,"Keywords: temporal graph, link prediction",Time Series and Temporal Modeling
+17,Dr.Spider: A Diagnostic Evaluation Benchmark towards Text-to-SQL Robustness,-''-,"Interpretability, Explainability, and Evaluation"
+18,"Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs",-''-,Unclassified
+19,DreamFusion: Text-to-3D using 2D Diffusion,"Keywords: diffusion models, score-based generative models, NeRF, neural rendering, 3d synthesis",Diffusion Models and Generative Modeling
+20,Efficient Attention via Control Variates,"Keywords: attention mechanism, transformers, random features, control variates, importance sampling",Reinforcement Learning and Control
+21,Efficient Conditionally Invariant Representation Learning,"Keywords: conditional independence, kernel methods",Self-Supervised Learning and Representation Learning
+22,Efficiently Computing Nash Equilibria in Adversarial Team Markov Games,"Keywords: multiagent-reinforcement-learning.marl, rl, reinforcement-learning, learning-in-games, optimization, game-theory, policy-gradient",Optimization and Training Techniques
+23,Embedding Fourier for Ultra-High-Definition Low-Light Image Enhancement,"Keywords: low-light image enhancement, high-resolution image processing, Fourier transform, benchmark",Unclassified
+24,Emergent World Representations: Exploring a Sequence Model Trained on a Synthetic Task,"Keywords: world representation, GPT",Biological Applications in AI
+25,Encoding Recurrence into Transformers,"Keywords: Recurrent models, Transformers, sample efficiency, gated mechanism",Transformers and Sequence Modeling
+26,Extreme Q-Learning: MaxEnt RL without Entropy,"Keywords: reinforcement learning, offline reinforcement learning, statistical learning, extreme value analysis, maximum entropy rl, gumbel",Reinforcement Learning and Control
+27,Fast and Precise: Adjusting Planning Horizon with Adaptive Subgoal Search,"Keywords: search, adaptive horizon, verification, deep learning, hierarchical planning",Simulation and Planning in Robotics
+28,From Play to Policy: Conditional Behavior Generation from Uncurated Robot Data,"Keywords: behavior generation, robot manipulation, learning from play",Unclassified
+29,Git Re-Basin: Merging Models modulo Permutation Symmetries,-''-,Unclassified
+30,Graph Neural Networks for Link Prediction with Subgraph Sketching,"Keywords: Graph Neural Networks, Link Prediction, Data Sketching",Graph Neural Networks and Graph Theory
+31,Image as Set of Points,"Keywords: Clustering, Image Processing, Context Cluster, Representation",Clustering and Dimensionality Reduction
+32,Image to Sphere: Learning Equivariant Features for Efficient Pose Prediction,"Keywords: equivariance, sample efficiency, pose detection, symmetry, SO(3)",Unclassified
+33,In-context Reinforcement Learning with Algorithm Distillation,"Keywords: Reinforcement Learning, Transformers, Learning to Learn, Large Language Models",Large Language Models and Language Modeling
+34,Is Conditional Generative Modeling all you need for Decision Making?,"Keywords: Offline Reinforcement Learning, Conditional Generative Modeling, Sequential Decision Making, Diffusion Models",Diffusion Models and Generative Modeling
+35,Is the Performance of My Deep Network Too Good to Be True? A Direct Approach to Estimating the Bayes Error in Binary Classification,"Keywords: Bayes error, best achievable error, irreducible error",Unclassified
+36,Language Modelling with Pixels,"Keywords: representation learning, nlp, transformers, language model, masked autoencoder",Transformers and Sequence Modeling
+37,Learnable Behavior Control: Breaking Atari Human World Records via Sample-Efficient Behavior Selection,"Keywords: Deep Reinforcement Learning, The Arcade Learning Environment, Human World Records, Behavioral Control",Reinforcement Learning and Control
+38,Learning on Large-scale Text-attributed Graphs via Variational Inference,"Keywords: Language Model, Graph Neural Network, Node Classification",Causal Discovery and Inference in Reinforcement Learning
+39,Learning where and when to reason in neuro-symbolic inference,-''-,Causal Discovery and Inference in Reinforcement Learning
+40,MICN: Multi-scale Local and Global Context Modeling for Long-term Series Forecasting,"Keywords: long-term forecasting, local and global context, multi-branch architecture, different potential patterns.",Unclassified
+41,Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning,TL;DR: We train a bot that places first in a no-press Diplomacy tournament with humans by using human-data-regularized reinforcement learning and planning,Reinforcement Learning and Control
+42,Mitigating Gradient Bias in Multi-objective Learning: A Provably Convergent Approach,"Keywords: Multi-objective Optimization, Machine Learning",Optimization and Training Techniques
+43,MocoSFL: enabling cross-client collaborative self-supervised learning,"Keywords: Self-supervised Learning, Collaborative Learning, Split Federated Learning, Momentum Contrast",Self-Supervised Learning and Representation Learning
+44,Modeling content creator incentives on algorithm-curated platforms,"Keywords: Nash equilibria, producer incentives, attention monetizing platforms, recommenders, differentiable games, exposure game",Unclassified
+45,Moving Forward by Moving Backward: Embedding Action Impact over Action Semantics,"Keywords: Embodied AI, Adaptation, Visual Navigation",Biological Applications in AI
+46,"Multi-Rate VAE: Train Once, Get the Full Rate-Distortion Curve","Keywords: Variational Autoencoders, VAEs, Hypernetworks, Response Functions, Hyperparameter Tuning",Biological Applications in AI
+47,Near-optimal Coresets for Robust Clustering,"Keywords: clustering, outlier, robustness, coreset",Clustering and Dimensionality Reduction
+48,Near-optimal Policy Identification in Active Reinforcement Learning,"Keywords: reinforcement learning, contextual bayesian optimization, kernelized least-squares value iteration",Reinforcement Learning and Control
+49,Offline Q-learning on Diverse Multi-Task Data Both Scales And Generalizes,"Keywords: offline RL, multi-task Atari, large models",Unclassified
+50,Offline RL with No OOD Actions: In-Sample Learning via Implicit Value Regularization,"Keywords: Deep Reinforcement Learning, Offline Reinforcement Learning, Value Regularization, Continuous Control",Reinforcement Learning and Control
+51,On the Sensitivity of Reward Inference to Misspecified Human Models,"Keywords: reward learning, inverse reinforcement learning, misspecification",Reinforcement Learning and Control
+52,On the duality between contrastive and non-contrastive self-supervised learning,"Keywords: Self-supervised learning, contrastive, non-contrastive",Self-Supervised Learning and Representation Learning
+53,PaLI: A Jointly-Scaled Multilingual Language-Image Model,-''-,Unclassified
+54,Personalized Federated Learning with Feature Alignment and Classifier Collaboration,"Keywords: Federated Learning, Personalization, Collaboration",Federated Learning and Privacy
+55,REVISITING PRUNING AT INITIALIZATION THROUGH THE LENS OF RAMANUJAN GRAPH,"Keywords: pruning at initialization, graph theory, Ramanujan Graph, sparse neural networks",Graph Neural Networks and Graph Theory
+56,ReAct: Synergizing Reasoning and Acting in Language Models,"Keywords: Language model, agent, reasoning, decision making",Unclassified
+57,Relative representations enable zero-shot latent space communication,"Keywords: relative representation, zero-shot, stitching, invariance, latent communication, isometry, representation learning",Self-Supervised Learning and Representation Learning
+58,Rethinking the Expressive Power of GNNs via Graph Biconnectivity,"Keywords: Graph Neural Networks, Expressive Power, Weisfeiler-Lehman test, Graph Transformer, Biconnectivity",Graph Neural Networks and Graph Theory
+59,SAM as an Optimal Relaxation of Bayes,"Keywords: bayesian deep learning, sharpness-aware minimization, variational bayes, convex duality",Unclassified
+60,Sample-Efficient Reinforcement Learning by Breaking the Replay Ratio Barrier,"Keywords: reinforcement learning, sample efficiency, resets",Reinforcement Learning and Control
+61,Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions,"Keywords: diffusion models, score-based generative models, sampling, score estimation, Langevin, stochastic differential equations",Diffusion Models and Generative Modeling
+62,Scaling Up Probabilistic Circuits by Latent Variable Distillation,-''-,Dataset Condensation and Distillation
+63,Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning,"Keywords: System 2, Logical reasoning, Language Models, Large Language Models, Reasoning, Neuro-symbolic, Neural Symbolic, Interpretability",Large Language Models and Language Modeling
+64,SimPer: Simple Self-Supervised Learning of Periodic Targets,"Keywords: Periodic learning, Self-supervised learning, Representation learning, Periodic targets, Periodicity",Self-Supervised Learning and Representation Learning
+65,Simplified State Space Layers for Sequence Modeling,"Keywords: sequence models, state space, S4, RNN, transformers, long range arena",Transformers and Sequence Modeling
+66,Sparse Mixture-of-Experts are Domain Generalizable Learners,"Keywords: domain generalization, mixture-of-experts, algorithmic alignment, visual attributes",Ensembling and Generalization
+67,Statistical Efficiency of Score Matching: The View from Isoperimetry,"Keywords: score matching, log-Sobolev inequality, isoperimetry, relative efficiency, sample complexity",Unclassified
+68,Symbolic Physics Learner: Discovering governing equations via Monte Carlo tree search,"Keywords: symbolic regression, Monte Carlo tree search, governing equations, nonlinear dynamics",Unclassified
+69,Tailoring Language Generation Models under Total Variation Distance,"Keywords: language generation, maximum likelihood estimation, total variation distance, text degeneration",Biological Applications in AI
+70,Targeted Hyperparameter Optimization with Lexicographic Preferences Over Multiple Objectives,"Keywords: Automatic Machine learning, Hyperparameter tuning, Lexicographic preference",Optimization and Training Techniques
+71,Temporal Domain Generalization with Drift-Aware Dynamic Neural Networks,"Keywords: Domain Generalization, Sequential Learning Model, Dynamic Neural Network",Time Series and Temporal Modeling
+72,The Lie Derivative for Measuring Learned Equivariance,-''-,Unclassified
+73,The Modality Focusing Hypothesis: Towards Understanding Crossmodal Knowledge Distillation,"Keywords: multimodal learning, knowledge distillation",Multimodal Learning and Vision-Language Models
+74,The Role of Coverage in Online Reinforcement Learning,"Keywords: reinforcement learning theory, online RL, offline RL, learnability, general function approximation",Reinforcement Learning and Control
+75,Time Will Tell: New Outlooks and A Baseline for Temporal Multi-View 3D Object Detection,"Keywords: Computer Vision, 3D Object Detection, Stereo Matching",Computer Vision and 3D Modeling
+76,Token Merging: Your ViT But Faster,"Keywords: token merging, token pruning, inference speed, training speed, throughput, off-the-shelf, fine tuning",Optimization and Training Techniques
+77,Towards Open Temporal Graph Neural Networks,"Keywords: Temporal Graph Neural Networks, Open Temporal Graphs, Class-Incremental Learning",Graph Neural Networks and Graph Theory
+78,Towards Stable Test-time Adaptation in Dynamic Wild World,"Keywords: Test-time adaptation, Roustness",Unclassified
+79,"Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning","TL;DR: We provide a theory to explain why ensemble and knowledge distillation work for Deep Learning. It matches practice well, while traditional theory such as boosting, random feature mappings or NTKs, cannot explain the same phenomena for DL.",Biological Applications in AI
+80,Transfer NAS with Meta-learned Bayesian Surrogates,-''-,Unclassified
+81,Transformers Learn Shortcuts to Automata,"Keywords: Transformer, self-attention, group theory, semigroup theory, algebraic automata theory, shortcut learning, theory of deep learning",Transformers and Sequence Modeling
+82,Transformers are Sample-Efficient World Models,"Keywords: deep learning, reinforcement learning, model-based reinforcement learning, world models, learning in imagination, transformers, discrete autoencoders, generative modeling, sequence modeling",Diffusion Models and Generative Modeling
+83,Universal Few-shot Learning of Dense Prediction Tasks with Visual Token Matching,"Keywords: few-shot learning, dense prediction tasks",Unclassified
+84,View Synthesis with Sculpted Neural Points,-''-,Unclassified
+85,Visual Classification via Description from Large Language Models,"Keywords: vision-language models, CLIP, prompting, GPT-3, large language models, zero-shot recognition, multimodal",Large Language Models and Language Modeling
+86,"When and Why Vision-Language Models Behave like Bags-Of-Words, and What to Do About It?","Keywords: vision-language models, clip, contrastive learning, retrieval, vision-language pretraining, multimodal representation learning",Optimization and Training Techniques
+87,WikiWhy: Answering and Explaining Cause-and-Effect Questions,"Keywords: NLP, Question Answering, LLM, Dataset, Explanation",Biological Applications in AI
+88,Win: Weight-Decay-Integrated Nesterov Acceleration for Adaptive Gradient Algorithms,"Keywords: Optimization acceleration in deep learning, network optimizers, deep learning optimizer, deep learning algorithm",Optimization and Training Techniques
+89,​​What learning algorithm is in-context learning? Investigations with linear models,"Keywords: in-context learning, transformers, sequence models, deep learning, meta learning",Transformers and Sequence Modeling

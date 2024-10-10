@@ -1,0 +1,89 @@
+Unnamed: 0,Title,Keywords,Classification
+0,"""What Data Benefits My Classifier?"" Enhancing Model Performance and Interpretability through Influence-Based Data Selection","Keywords: Data Selection, Interpretability, Fairness, Robustness","Interpretability, Explainability, and Evaluation"
+1,"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis","Keywords: Web Navigation, Web Automation, Large Language Models, Language Model Agents, Tool Use, Program Synthesis",Large Language Models and Language Modeling
+2,ASID: Active Exploration for System Identification in Robotic Manipulation,"Keywords: sim2real, system identification, exploration",Unclassified
+3,Accelerating Distributed Stochastic Optimization via Self-Repellent Random Walks,"Keywords: Distributed Learning, Self-Repellent Random Walk, Token Algorithm, Central Limit Theorem, Asymptotic Analysis",Optimization and Training Techniques
+4,Amortizing intractable inference in large language models,"Keywords: large language models, LLMs, Bayesian inference, chain-of-thought reasoning, latent variable models, generative flow networks, GFlowNets",Large Language Models and Language Modeling
+5,An Analytical Solution to Gauss-Newton Loss for Direct Image Alignment,Code Of Ethics: I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics.,"Fairness, Ethics, and Privacy"
+6,Approximating Nash Equilibria in Normal-Form Games via Stochastic Optimization,"Keywords: game theory, stochastic optimization, nash equilbrium, normal-form game, x-armed bandits",Optimization and Training Techniques
+7,Batched Low-Rank Adaptation of Foundation Models,"Keywords: LLM Adaptation, Low-rank, Code Generation",Unclassified
+8,Beyond Weisfeiler-Lehman: A Quantitative Framework for GNN Expressiveness,"Keywords: Graph Neural Networks, Expressive Power, Homomorphism, Subgraph Counting, Weisfeiler-Lehman",Graph Neural Networks and Graph Theory
+9,BooookScore: A systematic exploration of book-length summarization in the era of LLMs,"Keywords: summarization, evaluation, long context, prompting, LLM",Large Language Models and Language Modeling
+10,Cameras as Rays: Pose Estimation via Ray Diffusion,"Keywords: 3D Computer Vision, Pose Estimation, Diffusion",Computer Vision and 3D Modeling
+11,Candidate Label Set Pruning: A Data-centric Perspective for Deep Partial-label Learning,"Keywords: partial label learning, label disambiguation, candidate label set pruning",Unclassified
+12,ClimODE: Climate and Weather Forecasting with Physics-informed Neural ODEs,"Keywords: neural ODE, time-series forecasting, climate prediction, physics-informed ML",Climate and Weather Modeling
+13,"Detecting, Explaining, and Mitigating Memorization in Diffusion Models","Keywords: Diffusion Model, Memorization",Diffusion Models and Generative Modeling
+14,Diffusion Model for Dense Matching,"Keywords: Diffusion Models, Visual Correspondence",Diffusion Models and Generative Modeling
+15,DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation,"Keywords: Text-to-3D, Image-to-3D, 3D Generation, Efficiency",Unclassified
+16,Efficient Episodic Memory Utilization of Cooperative Multi-Agent Reinforcement Learning,"Keywords: Multi-agent reinforcement learning, episodic control, episodic incentive, state embedding",Reinforcement Learning and Control
+17,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,"Keywords: Program Synthesis, Programming By Example, Generalization, Compositional Generalization",Program Synthesis and Theorem Proving
+18,"Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!","Keywords: AI Safety, Large Language Models, Fine-tuning, Jailbreaking, AI Alignment",Large Language Models and Language Modeling
+19,Finetuning Text-to-Image Diffusion Models for Fairness,"Keywords: Fairness, Alignment, Diffusion Models, Text-to-Image Generation",Diffusion Models and Generative Modeling
+20,Flow Matching on General Geometries,"Keywords: general manifolds, diffusion models, continuous normalizing flow",Diffusion Models and Generative Modeling
+21,GNNCert: Deterministic Certification of Graph Neural Networks against Adversarial Perturbations,Keywords: Adversarial attacks to graph classification; provable robustness,Graph Neural Networks and Graph Theory
+22,Gene Regulatory Network Inference in the Presence of Dropouts: a Causal View,"Keywords: Gene regulatory network, Single-cell RNA-sequencing, Dropout, Zero-inflated data, Causal model, Causal discovery, Nonparametric",Causal Discovery and Inference in Reinforcement Learning
+23,Generalization in diffusion models arises from geometry-adaptive harmonic representations,"Keywords: diffusion models, memorization, generalization, inductive bias, curse of dimensionality, denoising, geometry-adaptive harmonic basis",Diffusion Models and Generative Modeling
+24,Generative Modeling with Phase Stochastic Bridge,"Keywords: Generative Modeling, Stochastic Optimal Control, Diffusion Model",Diffusion Models and Generative Modeling
+25,Ghost on the Shell: An Expressive Representation of General 3D Shapes,Keywords: Non-watertight mesh; generative model; 3D geometry; differentiable rendering,Unclassified
+26,Graph Neural Networks for Learning Equivariant Representations of Neural Networks,"Keywords: Deep weight space, Graph neural networks, Transformers, Permutation equivariance, Implicit neural representations, Networks for networks, Neural graphs",Graph Neural Networks and Graph Theory
+27,How I Warped Your Noise: a Temporally-Correlated Noise Prior for Diffusion Models,Keywords: diffusion models; temporal coherency; Gaussian noise field; continuous white noise; noise transport,Diffusion Models and Generative Modeling
+28,How Well Do Supervised 3D Models Transfer to Medical Imaging Tasks?,"Keywords: Transfer Learning, Medical Image Analysis, Organ Segmentation",Medical and Biological Applications
+29,Improved Active Learning via Dependent Leverage Score Sampling,"Keywords: leverage score sampling, active learning, polynomial regression, differential equations, pivotal sampling","Active, Continual, and Meta Learning"
+30,Improved Techniques for Training Consistency Models,"Keywords: Consistency Models, Consistency Training, Diffusion Models, Score-Based Generative Models, Score-Based Diffusion Models, Distillation",Diffusion Models and Generative Modeling
+31,Improving Convergence and Generalization Using Parameter Symmetries,"Keywords: Symmetry, optimization, generalization",Optimization and Training Techniques
+32,InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning,Keywords: Dynamic Data Pruning; Training acceleration,Optimization and Training Techniques
+33,Interpreting CLIP's Image Representation via Text-Based Decomposition,"Keywords: CLIP, interpretability, explainability","Interpretability, Explainability, and Evaluation"
+34,Is ImageNet worth 1 video? Learning strong image encoders from 1 long unlabelled video,"Keywords: self-supervised image-pretraining, egocentric video, Walking Tour dataset, multi-object tracking",Optimization and Training Techniques
+35,Knowledge Card: Filling LLMs' Knowledge Gaps with Plug-in Specialized Language Models,"Keywords: large language models, black-box language models, modular and collaborative knowledge",Large Language Models and Language Modeling
+36,LEGO-Prover: Neural Theorem Proving with Growing Libraries,"Keywords: Theorem proving, Large language model, Autoformalization",Program Synthesis and Theorem Proving
+37,LLMCarbon: Modeling the End-to-End Carbon Footprint of Large Language Models,"Keywords: carbon footprint modeling, large lanaguage models",Large Language Models and Language Modeling
+38,LRM: Large Reconstruction Model for Single Image to 3D,"Keywords: 3D Reconstruction, Large-Scale Training, Transformers",Transformers and Sequence Modeling
+39,Latent Trajectory Learning for Limited Timestamps under Distribution Shift over Time,"Keywords: Distribution Shift, Temporal Distribution Shift",Time Series and Temporal Modeling
+40,Learning Energy Decompositions for Partial Inference in GFlowNets,"Keywords: Generative flow networks, reinforcement learning, generative models",Reinforcement Learning and Control
+41,Learning Interactive Real-World Simulators,"Keywords: Generative simulator, simulating real-world interactions, planning, reinforcement learning, vision language models, video generation",Reinforcement Learning and Control
+42,Less is More: Fewer Interpretable Region via Submodular Subset Selection,"Keywords: Interpretable AI, Submodular subset selection, Explainable AI, Image Attribution",Biological Applications in AI
+43,Lipschitz Singularities in Diffusion Models,"Keywords: Image Generation, Generative models, Diffusion models",Diffusion Models and Generative Modeling
+44,LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models,"Keywords: quantization, compression, large language models, NLP, machine learning, low rank",Large Language Models and Language Modeling
+45,LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models,"Keywords: Efficient fine-tuning, Long context, Large language model",Large Language Models and Language Modeling
+46,METRA: Scalable Unsupervised RL with Metric-Aware Abstraction,Keywords: reinforcement learning,Reinforcement Learning and Control
+47,Mastering Memory Tasks with World Models,"Keywords: model-based reinforcement learning, state space models, memory in reinforcement learning",Reinforcement Learning and Control
+48,MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts,"Keywords: large language models, large multimodal models, mathematical reasoning, vision-language reasoning, foundation models and their evaluations",Large Language Models and Language Modeling
+49,Meta Continual Learning Revisited: Implicitly Enhancing Online Hessian Approximation via Variance Reduction,Keywords: Continual Learning,Unclassified
+50,MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework,"Keywords: Autonomous Agent, Meta Programming, Multi-Agent Society, Group Intelligence",Meta Programming and Multi-Agent Systems
+51,Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space,"Keywords: Tabular data, tabular generation, diffusion models",Diffusion Models and Generative Modeling
+52,Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs,"Keywords: Large Language Model, Efficient Inference, Generative Inference, Key-Value Cache",Large Language Models and Language Modeling
+53,Monte Carlo guided Denoising Diffusion models for Bayesian linear inverse problems.,"Keywords: Monte Carlo, Denoising Diffusion model, score-based generative models, Sequential Monte Carlo, Bayesian Inverse Problems, Generative Models.",Diffusion Models and Generative Modeling
+54,Multi-Source Diffusion Models for Simultaneous Music Generation and Separation,"Keywords: source separation, probabilistic diffusion models, music generation",Diffusion Models and Generative Modeling
+55,Multi-granularity Correspondence Learning from Long-term Noisy Videos,"Keywords: Video-language pre-training, Noisy correspondence",Optimization and Training Techniques
+56,Multisize Dataset Condensation,"Keywords: Dataset Condensation, Dataset Distillation, Image Classification","Data Selection, Pruning, and Condensation"
+57,Neural Fine-Tuning Search for Few-Shot Learning,"Keywords: stochastic, neural, architecture, search, few, shot, learning, adapters",Unclassified
+58,Never Train from Scratch: Fair Comparison of Long-Sequence Models Requires Data-Driven Priors,"Keywords: Pre Training, Transformers, State Space Models, Long Range Models, Fair Evaluation",Transformers and Sequence Modeling
+59,On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs,"Keywords: LLM, Benchmark, Evaluation, Psychometrics",Large Language Models and Language Modeling
+60,"On the Joint Interaction of Models, Data, and Features","Keywords: Generalization, feature learning, empirical phenomena",Ensembling and Generalization
+61,One-shot Empirical Privacy Estimation for Federated Learning,"Keywords: differential privacy, federated learning, empirical privacy",Federated Learning and Privacy
+62,Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement,"Keywords: language model, natural language processing, inductive reasoning",Unclassified
+63,Pre-Training Goal-based Models for Sample-Efficient Reinforcement Learning,"Keywords: reinforcement learning, pre-training, goal-conditioned RL, open-world environments",Reinforcement Learning and Control
+64,Predictive auxiliary objectives in deep RL mimic learning in the brain,"Keywords: hippocampus, neuroscience, cognitive science, deep reinforcement learning, representation learning, prediction",Reinforcement Learning and Control
+65,Protein Discovery with Discrete Walk-Jump Sampling,"Keywords: generative modeling, langevin mcmc, energy-based models, score-based models, protein design, protein discovery",Diffusion Models and Generative Modeling
+66,Provable Compositional Generalization for Object-Centric Learning,"Keywords: compositional generalization, identifiability, object-centric learning, generalization, OOD generalization, unsupervised learning, slot attention, disentanglement, autoencoders, representation learning",Self-Supervised Learning and Representation Learning
+67,Proving Test Set Contamination in Black-Box Language Models,"Keywords: language modeling, memorization, dataset contamination",Unclassified
+68,Quick-Tune: Quickly Learning Which Pretrained Model to Finetune and How,"Keywords: Finetuning, pretrained model hubs, transfer learning, hyperparameter optimization, meta-learning",Optimization and Training Techniques
+69,ReLU Strikes Back: Exploiting Activation Sparsity in Large Language Models,"Keywords: Large Language Models, Sparsity, Activation Function, ReLU Activation Function",Large Language Models and Language Modeling
+70,Robust agents learn causal world models,"Keywords: causality, generalisation, causal discovery, domain adaptation, out-of-distribution generalization","Simulation, Planning, and Agents"
+71,SWE-bench: Can Language Models Resolve Real-world Github Issues?,"Keywords: Language models, Natural language processing, Software engineering",Software Engineering and Code Understanding
+72,Self-Alignment with Instruction Backtranslation,"Keywords: large language models, self-supervised learning, data augmentation",Large Language Models and Language Modeling
+73,"Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection","Keywords: Retrieval-augmented Generation, Language Models, Retrieval-augmented LMs, Factuality",Self-Reflection and Self-Alignment in LLMs
+74,Small-scale proxies for large-scale Transformer training instabilities,"Keywords: Small Transformers, Training, Stability",Transformers and Sequence Modeling
+75,"Statistically Optimal
+K
+-means Clustering via Nonnegative Low-rank Semidefinite Programming","Keywords: clustering, Burer-Monteiro, semidefinite programming",Clustering and Dimensionality Reduction
+76,The mechanistic basis of data dependence and abrupt learning in an in-context classification task,"Keywords: in-context learning, mechanistic interpretability, language models, induction heads","Interpretability, Explainability, and Evaluation"
+77,Topological data analysis on noisy quantum computers,"Keywords: Topological data analysis, quantum computing, unsupervised learning, feature extraction",Quantum Computing and Topological Data Analysis
+78,Towards a statistical theory of data selection under weak supervision,"Keywords: Data Selection, Empirical Risk Minimization, Influence Functions, High dimensional asymptotics","Data Selection, Pruning, and Condensation"
+79,Understanding In-Context Learning in Transformers and LLMs by Learning to Learn Discrete Functions,"Keywords: In-context learning, Transformers, Large language models, Boolean functions",Large Language Models and Language Modeling
+80,Unified Generative Modeling of 3D Molecules with Bayesian Flow Networks,"Keywords: Drug Design, Molecule Generation, Deep Learning, Computational Biology",Diffusion Models and Generative Modeling
+81,Unprocessing Seven Years of Algorithmic Fairness,"Keywords: fairness, algorithmic fairness, social computing, tabular data, meta study","Fairness, Ethics, and Privacy"
+82,ValUES: A Framework for Systematic Validation of Uncertainty Estimation in Semantic Segmentation,"Keywords: uncertainty, segmentation, validation",Uncertainty Estimation and Validation
+83,Vision Transformers Need Registers,"Keywords: representation, vision, transformer, register, SSL, CLIP, attention, attention map, interpretability, DINO, DINOv2",Transformers and Sequence Modeling
+84,Würstchen: An Efficient Architecture for Large-Scale Text-to-Image Diffusion Models,"Keywords: Latent Diffusion Model, Text-to-Image, Neural Architectures, Foundation Models",Diffusion Models and Generative Modeling
+85,Zipformer: A faster and better encoder for automatic speech recognition,"Keywords: Zipformer, ScaledAdam, automatic speech recognition",Audio and Speech Processing
