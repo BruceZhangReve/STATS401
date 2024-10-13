@@ -1,0 +1,164 @@
+Sentence Number,Page,Sentence,Similarity,Cluster Number
+1,1,"Editor: Ivan Titov
+
+Abstract
+
+Transfer learning, where a model is first pre-trained on a data-rich task before being fine- tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP).",0.9365032211502214,0
+2,1,"The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice.",0.782425839416389,2
+3,1,"In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format.",0.859128057184219,0
+4,1,"Our systematic study compares pre-training objectives, architectures, unlabeled data sets, transfer approaches, and other factors on dozens of language understanding tasks.",0.8829750892763591,0
+5,1,"By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more.",0.8756681161024409,0
+6,1,"To facilitate future work on transfer learning for NLP, we release our data set, pre-trained models, and code.",0.8542881870214978,1
+7,1,"1
+
+Keywords: transfer learning, natural language processing, multi-task learning, attention- based models, deep learning
+
+1.",0.8818037012949693,0
+8,1,"Introduction
+
+Training a machine learning model to perform natural language processing (NLP) tasks often requires that the model can process text in a way that is amenable to downstream learning.",0.8939697637664509,0
+9,1,This can be loosely viewed as developing general-purpose knowledge that allows the model to “understand” text.,0.882188593099619,0
+10,1,This knowledge can range from low-level (e.g.,0.7527196352277838,2
+11,1,"the spelling
+
+∗ .",0.4890339562683911,4
+12,1,Equal contribution.,0.5594807169209921,4
+13,1,A description of each author’s contribution is available in Appendix A.,0.7251233771390061,2
+14,1,Correspondence to craffel@gmail.com .,0.6374271001347961,3
+15,1,"1. https://github.com/google-research/text-to-text-transfer-transformer
+
+© 2020 Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu.",0.8241959805303796,1
+16,1,"License: CC-BY 4.0, see https://creativecommons.org/licenses/by/4.0/ .",0.6778363657156293,3
+17,1,Attribution requirements are provided at http://jmlr.org/papers/v21/20-074.html .,0.7206430049858061,2
+18,2,"Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li and Liu
+
+or meaning of words) to high-level (e.g.",0.8128330367453752,1
+19,2,that a tuba is too large to fit in most backpacks).,0.7351051024532926,2
+20,2,"In modern machine learning practice, providing this knowledge is rarely done explicitly; instead, it is often learned as part of an auxiliary task.",0.9087696149408622,0
+21,2,"For example, a historically common approach is to use word vectors (Mikolov et al., 2013b,a; Pennington et al., 2014) to map word identities to a continuous representation where, ideally, similar words map to similar vectors.",0.8869582382243981,0
+22,2,"These vectors are often learned through an objective that, for example, encourages co-occurring words to be positioned nearby in the continuous space (Mikolov et al., 2013b).",0.7936117376123273,1
+23,2,"Recently, it has become increasingly common to pre-train the entire model on a data-rich task.",0.8387012225527033,1
+24,2,"Ideally, this pre-training causes the model to develop general-purpose abilities and knowledge that can then be transferred to downstream tasks.",0.8402242948235763,1
+25,2,"In applications of transfer learning to computer vision (Oquab et al., 2014; Jia et al., 2014; Huh et al., 2016; Yosinski et al., 2014), pre-training is typically done via supervised learning on a large labeled data set like ImageNet (Russakovsky et al., 2015; Deng et al., 2009).",0.8552548547547116,1
+26,2,"In contrast, modern techniques for transfer learning in NLP often pre-train using unsupervised learning on unlabeled data.",0.9432614822475329,0
+27,2,"This approach has recently been used to obtain state-of-the-art results in many of the most common NLP benchmarks (Devlin et al., 2018; Yang et al., 2019; Dong et al., 2019; Liu et al., 2019c; Lan et al., 2019).",0.8120655677117242,1
+28,2,"Beyond its empirical strength, unsupervised pre-training for NLP is particularly attractive because unlabeled text data is available en masse thanks to the Internet—for example, the Common Crawl project 2 produces about 20TB of text data extracted from web pages each month.",0.901929528031786,0
+29,2,"This is a natural fit for neural networks, which have been shown to exhibit remarkable scalability, i.e.",0.8536445489725927,1
+30,2,"it is often possible to achieve better performance simply by training a larger model on a larger data set (Hestness et al., 2017; Shazeer et al., 2017; Jozefowicz et al., 2016; Mahajan et al., 2018; Radford et al., 2019; Shazeer et al., 2018; Huang et al., 2018b; Keskar et al., 2019a).",0.8165743343318339,1
+31,2,"This synergy has resulted in a great deal of recent work developing transfer learning methodology for NLP, which has produced a wide landscape of pre-training objectives (Howard and Ruder, 2018; Devlin et al., 2018; Yang et al., 2019; Dong et al., 2019), unlabeled data sets (Yang et al., 2019; Liu et al., 2019c; Zellers et al., 2019), benchmarks (Wang et al., 2019b, 2018; Conneau and Kiela, 2018), fine-tuning methods (Howard and Ruder, 2018; Houlsby et al., 2019; Peters et al., 2019), and more.",0.8300331915694187,1
+32,2,"The rapid rate of progress and diversity of techniques in this burgeoning field can make it difficult to compare different algorithms, tease apart the effects of new contributions, and understand the space of existing methods for transfer learning.",0.8494542937422328,1
+33,2,"Motivated by a need for more rigorous understanding, we leverage a unified approach to transfer learning that allows us to systematically study different approaches and push the current limits of the field.",0.8033691123701449,1
+34,2,"The basic idea underlying our work is to treat every text processing problem as a “text-to-text” problem, i.e.",0.8831858152438661,0
+35,2,taking text as input and producing new text as output.,0.8321655770550023,1
+36,2,"This approach is inspired by previous unifying frameworks for NLP tasks, including casting all text problems as question answering (McCann et al., 2018), language modeling (Radford et al., 2019), or span extraction Keskar et al.",0.8857269123714513,0
+37,2,(2019b) tasks.,0.6997619155747065,2
+38,2,"Crucially, the text-to-text framework allows us to directly apply the same model, objective, training procedure, and decoding process to every task we consider.",0.8867716875721225,0
+39,2,"We leverage this flexibility by evaluating performance on a wide variety of English-based NLP problems, including question answering, document
+
+2. http://commoncrawl.org
+
+2",0.8382302190433626,1
+40,3,"Exploring the Limits of Transfer Learning
+
+""translate English to German: That is good.""",0.7893471392426564,1
+41,3,"""cola sentence: The course is jumping well.""",0.6812301263068673,3
+42,3,"""summarize: state authorities dispatched emergency crews tuesday to survey the damage after an onslaught of severe weather in mississippi...""
+
+""stsb sentence1: The rhino grazed on the grass.",0.7534203740479928,2
+43,3,"sentence2: A rhino is grazing in a field.""",0.7534141479697134,2
+44,3,"T5
+
+""Das ist gut.""",0.6303426943069972,3
+45,3,"""not acceptable""
+
+""six people hospitalized after a storm in attala county.""",0.6445636013618317,3
+46,3,"""3.8""
+
+Figure 1: A diagram of our text-to-text framework.",0.8137711325715051,1
+47,3,"Every task we consider—including translation, question answering, and classification—is cast as feeding our model text as input and training it to generate some target text.",0.9104707178940724,0
+48,3,"This allows us to use the same model, loss function, hyperparameters, etc.",0.8382995713211483,1
+49,3,across our diverse set of tasks.,0.7240942730072598,2
+50,3,It also provides a standard testbed for the methods included in our empirical survey.,0.7898385355815052,1
+51,3,"“T5” refers to our model, which we dub the “ T ext- t o- T ext T ransfer T ransformer”.",0.7395622369222494,2
+52,3,"summarization, and sentiment classification, to name a few.",0.7909085255196704,1
+53,3,"With this unified approach, we can compare the effectiveness of different transfer learning objectives, unlabeled data sets, and other factors, while exploring the limits of transfer learning for NLP by scaling up models and data sets beyond what has previously been considered.",0.9062336086395788,0
+54,3,We emphasize that our goal is not to propose new methods but instead to provide a comprehensive perspective on where the field stands.,0.7737094585982291,2
+55,3,"As such, our work primarily comprises a survey, exploration, and empirical comparison of existing techniques.",0.8219761440749221,1
+56,3,We also explore the limits of current approaches by scaling up the insights from our systematic study (training models up to 11 billion parameters) to obtain state-of-the-art results in many of the tasks we consider.,0.8638079657720122,0
+57,3,"In order to perform experiments at this scale, we introduce the “Colossal Clean Crawled Corpus” (C4), a data set consisting of hundreds of gigabytes of clean English text scraped from the web.",0.8650852235134086,0
+58,3,"Recognizing that the main utility of transfer learning is the possibility of leveraging pre-trained models in data-scarce settings, we release our code, data sets, and pre-trained models.",0.8761435850042811,0
+59,3,"1
+
+The remainder of the paper is structured as follows: In the following section, we discuss our base model and its implementation, our procedure for formulating every text processing problem as a text-to-text task, and the suite of tasks we consider.",0.8587671729730997,0
+60,3,"In Section 3, we present a large set of experiments that explore the field of transfer learning for NLP.",0.8544656929869555,1
+61,3,"At the end of the section (Section 3.7), we combine insights from our systematic study to obtain state-of-the-art results on a wide variety of benchmarks.",0.8011638503072809,1
+62,3,"Finally, we provide a summary of our results and wrap up with a look towards the future in Section 4.",0.7363897258274245,2
+63,3,3,0.4628240486580145,4
+64,4,"Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li and Liu
+
+2.",0.6252198405032068,3
+65,4,"Setup
+
+Before presenting the results from our large-scale empirical study, we review the necessary background topics required to understand our results, including the Transformer model architecture and the downstream tasks we evaluate on.",0.8616611356622996,0
+66,4,"We also introduce our approach for treating every problem as a text-to-text task and describe our “Colossal Clean Crawled Corpus” (C4), the Common Crawl-based data set we created as a source of unlabeled text data.",0.9129505805219731,0
+67,4,We refer to our model and framework as the “ T ext- t o- T ext T ransfer T ransformer” (T5).,0.7892629910936158,1
+68,4,2.1.,0.6127899168779838,3
+69,4,"Model
+
+Early results on transfer learning for NLP leveraged recurrent neural networks (Peters et al., 2018; Howard and Ruder, 2018), but it has recently become more common to use models based on the “Transformer” architecture (Vaswani et al., 2017).",0.8680161921769394,0
+70,4,"The Transformer was initially shown to be effective for machine translation, but it has subsequently been used in a wide variety of NLP settings (Radford et al., 2018; Devlin et al., 2018; McCann et al., 2018; Yu et al., 2018).",0.8168797661926119,1
+71,4,"Due to its increasing ubiquity, all of the models we study are based on the Transformer architecture.",0.7233502098178939,2
+72,4,"Apart from the details mentioned below and the variants we explore in Section 3.2, we do not deviate significantly from this architecture as originally proposed.",0.7785300533517545,2
+73,4,"Instead of providing a comprehensive definition of this model, we refer the interested reader to the original paper (Vaswani et al., 2017) or follow-up tutorials 3,4 for a more detailed introduction.",0.8144876398236272,1
+74,4,"The primary building block of the Transformer is self-attention (Cheng et al., 2016).",0.7883459336974701,2
+75,4,"Self-attention is a variant of attention (Graves, 2013; Bahdanau et al., 2015) that processes a sequence by replacing each element by a weighted average of the rest of the sequence.",0.8347362950074048,1
+76,4,"The original Transformer consisted of an encoder-decoder architecture and was intended for sequence-to-sequence (Sutskever et al., 2014; Kalchbrenner et al., 2014) tasks.",0.8265951626212509,1
+77,4,"It has recently also become common to use models consisting of a single Transformer layer stack, with varying forms of self-attention used to produce architectures appropriate for language modeling (Radford et al., 2018; Al-Rfou et al., 2019) or classification and span prediction tasks (Devlin et al., 2018; Yang et al., 2019).",0.8767358091530822,0
+78,4,We empirically explore these architectural variants in Section 3.2.,0.7964138497567423,1
+79,4,"Overall, our encoder-decoder Transformer implementation closely follows its originally- proposed form (Vaswani et al., 2017).",0.866822796764632,0
+80,4,"First, an input sequence of tokens is mapped to a sequence of embeddings, which is then passed into the encoder.",0.7177737405391582,2
+81,4,"The encoder consists of a stack of “blocks”, each of which comprises two subcomponents: a self-attention layer followed by a small feed-forward network.",0.8257379141974748,1
+82,4,"Layer normalization (Ba et al., 2016) is applied to the input of each subcomponent.",0.7777090556534019,2
+83,4,We use a simplified version of layer normalization where the activations are only rescaled and no additive bias is applied.,0.8344618187015953,1
+84,4,"After layer normalization, a residual skip connection (He et al., 2016) adds each subcomponent’s input to its output.",0.8322129130944504,1
+85,4,"Dropout (Srivastava et al., 2014) is applied within the feed-forward network, on the skip connection, on the attention weights, and at the input and output of the entire stack.",0.8603205121484178,0
+86,4,"The decoder is similar in structure to the encoder except that it includes a standard attention
+
+3. http://nlp.seas.harvard.edu/2018/04/03/attention.html 4. http://jalammar.github.io/illustrated-transformer/
+
+4",0.8154430239277981,1
+87,5,"Exploring the Limits of Transfer Learning
+
+mechanism after each self-attention layer that attends to the output of the encoder.",0.8089350951071141,1
+88,5,"The self-attention mechanism in the decoder also uses a form of autoregressive or causal self- attention, which only allows the model to attend to past outputs.",0.8169563019386681,1
+89,5,"The output of the final decoder block is fed into a dense layer with a softmax output, whose weights are shared with the input embedding matrix.",0.7748340905398028,2
+90,5,All attention mechanisms in the Transformer are split up into independent “heads” whose outputs are concatenated before being further processed.,0.7814723482470016,2
+91,5,Since self-attention is order-independent (i.e.,0.7711111290001597,2
+92,5,"it is an operation on sets), it is common to provide an explicit position signal to the Transformer.",0.6047480503362196,3
+93,5,"While the original Transformer used a sinusoidal position signal or learned position embeddings, it has recently become more common to use relative position embeddings (Shaw et al., 2018; Huang et al., 2018a).",0.8369804603253224,1
+94,5,"Instead of using a fixed embedding for each position, relative position embeddings produce a different learned embedding according to the offset between the “key” and “query” being compared in the self-attention mechanism.",0.8903465944230615,0
+95,5,We use a simplified form of position embeddings where each “embedding” is simply a scalar that is added to the corresponding logit used for computing the attention weights.,0.8426653168128957,1
+96,5,"For efficiency, we also share the position embedding parameters across all layers in our model, though within a given layer each attention head uses a different learned position embedding.",0.8545873747543806,1
+97,5,"Typically, a fixed number of embeddings are learned, each corresponding to a range of possible key-query offsets.",0.8395972097342879,1
+98,5,"In this work, we use 32 embeddings for all of our models with ranges that increase in size logarithmically up to an offset of 128 beyond which we assign all relative positions to the same embedding.",0.8341641645205535,1
+99,5,"Note that a given layer is insensitive to relative position beyond 128 tokens, but subsequent layers can build a sensitivity to larger offsets by combining local information from previous layers.",0.8463579789504372,1
+100,5,"To summarize, our model is roughly equivalent to the original Transformer proposed by Vaswani et al.",0.8144851123437147,1
+101,5,"(2017) with the exception of removing the Layer Norm bias, placing the layer normalization outside the residual path, and using a different position embedding scheme.",0.8000372946647802,1
+102,5,"Since these architectural changes are orthogonal to the experimental factors we consider in our empirical survey of transfer learning, we leave the ablation of their impact for future work.",0.827518262571101,1
+103,5,"As part of our study, we experiment with the scalability of these models, i.e.",0.7602935786882921,2
+104,5,how their performance changes as they are made to have more parameters or layers.,0.8187375357435271,1
+105,5,Training large models can be non-trivial since they might not fit on a single machine and require a great deal of computation.,0.8743098784866941,0
+106,5,"As a result, we use a combination of model and data parallelism and train models on “slices” of Cloud TPU Pods.",0.8331761481764919,1
+107,5,"5 TPU pods are are multi-rack ML supercomputers that contain 1 , 024 TPU v3 chips connected via a high-speed 2D mesh interconnect with supporting CPU host machines.",0.7887643858234725,2
+108,5,"We leverage the Mesh TensorFlow library (Shazeer et al., 2018) for ease of implementation of both model parallelism and data parallelism (Krizhevsky, 2014).",0.8545661311241084,1
+109,5,2.2.,0.5452201029833362,4
+110,5,"The Colossal Clean Crawled Corpus
+
+Much of the previous work on transfer learning for NLP makes use of large unlabeled data sets for unsupervised learning.",0.8992589370133776,0
+111,5,"In this paper, we are interested in measuring the effect of the quality, characteristics, and size of this unlabeled data.",0.8212984563845609,1
+112,5,"To generate data sets that satisfy our needs, we leverage Common Crawl as a source of text scraped from the web.",0.8461224081460526,1
+113,5,"Common
+
+5. https://cloud.google.com/tpu/
+
+5",0.7177205510739064,2

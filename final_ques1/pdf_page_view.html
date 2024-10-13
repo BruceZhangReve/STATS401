@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.js with D3 Graph Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* 两栏布局样式 */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* 左侧PDF渲染 */
+        #pdf-viewer {
+            width: 50%;
+        }
+
+        #pdf-canvas {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        /* 右侧文字内容 */
+        #text-content {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            overflow-y: auto;
+            height: 600px;
+            border-radius: 8px;
+        }
+
+        /* 翻页按钮 */
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        /* D3 图表容器 */
+        #graph {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">PDF.js with D3 Graph Example</h2>
+<div id="legend" style="margin-top: 20px;"></div>
+<!-- 两栏布局：左边是PDF视图，右边是文字提取 -->
+<div class="container">
+    <div id="pdf-viewer">
+        <canvas id="pdf-canvas"></canvas>
+        <div class="pagination">
+            <button id="prev-page">上一页</button>
+            <span>当前页: <span id="page-num"></span> / <span id="page-count"></span></span>
+            <button id="next-page">下一页</button>
+        </div>
+    </div>
+    <div id="text-content">
+        <h3>提取的文本内容：</h3>
+        <div id="extracted-text"></div>
+    </div>
+</div>
+
+<!-- D3.js 图表 -->
+<div id="graph"></div>
+
+<script>
+// 定义要高亮的句子列表并初始化为空
+var highlightSentences = [];
+
+// 定义不同 cluster 对应的颜色 (使用 RGBA 格式来设置透明度)
+var clusterColors = [
+    'rgba(255, 0, 0, 0.2)',   // Cluster 0 红色
+    'rgba(0, 255, 0, 0.2)',   // Cluster 1 绿色
+    'rgba(0, 0, 255, 0.2)',   // Cluster 2 蓝色
+    'rgba(255, 255, 0, 0.2)', // Cluster 3 黄色
+    'rgba(255, 0, 255, 0.2)'  // Cluster 4 紫色
+];
+
+// 匹配并高亮句子，根据 cluster 分配不同颜色，使用 n-gram 来进行宽松匹配
+function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $&表示整个匹配的字符串
+    }
+    
+    // 生成 n-gram（例如 5-gram）
+    function generateNgrams(sentence, n = 5) {
+        const words = sentence.split(/\s+/); // 按空格分割单词
+        const ngrams = [];
+        for (let i = 0; i <= words.length - n; i++) {
+            ngrams.push(words.slice(i, i + n).join(' ')); // 生成 n-gram
+        }
+        return ngrams;
+    }
+    
+    // 匹配并高亮句子，根据 cluster 分配不同颜色，使用 n-gram 来进行宽松匹配
+    function highlightText(text) {
+        highlightSentences.forEach(function(sentenceObj) {
+            var sentence = sentenceObj.Sentence;
+            var clusterNumber = sentenceObj["Cluster Number"]; // 获取 cluster number
+            var similarity = sentenceObj["Similarity"]; // 获取 similarity
+            var sentenceNumber = sentenceObj["Sentence Number"];
+            var color = clusterColors[clusterNumber % clusterColors.length]; // 根据 cluster number 选颜色
+            
+            // 生成 5-gram
+            var ngrams = generateNgrams(sentence, 5);
+    
+            // 对每个 n-gram 进行匹配
+            ngrams.forEach(function(ngram) {
+                var escapedNgram = escapeRegExp(ngram); // 先转义 n-gram 中的特殊字符
+                var regex = new RegExp(`(${escapedNgram})`, 'gi');
+                text = text.replace(regex, `<mark 
+                    style="background-color: ${color};"
+                    data-cluster="${clusterNumber}" 
+                    data-similarity="${similarity}"
+                    onmouseover="showInfo(this)" 
+                    onmouseout="hideInfo()">$1</mark>`);  // 添加data属性和鼠标事件
+            });
+        });
+        return text;
+    }
+
+// 显示 Cluster Number 和 Similarity 信息
+function showInfo(element) {
+    var cluster = element.getAttribute('data-cluster');
+    var similarity = element.getAttribute('data-similarity');
+    
+    var infoBox = document.getElementById('info-box');
+    infoBox.style.display = 'block';
+    infoBox.innerHTML = `Cluster: ${cluster} | Similarity: ${similarity}`;
+    
+    // 更新 infoBox 的位置，使其跟随鼠标
+    document.addEventListener('mousemove', function(e) {
+        infoBox.style.left = e.pageX + 10 + 'px';
+        infoBox.style.top = e.pageY + 10 + 'px';
+    });
+}
+
+// 隐藏信息框
+function hideInfo() {
+    var infoBox = document.getElementById('info-box');
+    infoBox.style.display = 'none';
+}
+
+// 创建节点和连接的 D3 图表
+function createGraph(data) {
+    // 清空当前图表
+    d3.select("#graph").html("");
+
+    var nodes = [];
+    var links = [];
+
+    // 提取 Cluster 0 节点
+    var cluster0Nodes = data.filter(d => d["Cluster Number"] === 0);
+
+    // 处理每个句子，生成节点和链接
+    data.forEach(function(sentenceObj) {
+        var cluster = sentenceObj["Cluster Number"];
+        var sentenceNumber = sentenceObj["Sentence Number"];
+
+        // 创建节点
+        var node = {
+            id: sentenceNumber,
+            cluster: cluster,
+            radius: cluster === 0 ? 10 : 5  // Cluster 0 节点较大
+        };
+        nodes.push(node);
+
+        // 生成连接：如果是 Cluster 0 的节点，它们相互连接
+        if (cluster === 0) {
+            cluster0Nodes.forEach(function(otherNode) {
+                if (otherNode["Sentence Number"] !== sentenceNumber) {
+                    links.push({
+                        source: sentenceNumber,
+                        target: otherNode["Sentence Number"],
+                        value: 3  // 粗线
+                    });
+                }
+            });
+        } else {
+            // 非 Cluster 0 的节点，连接到最近的 Cluster 0 节点
+            var nearestCluster0 = cluster0Nodes.find(n => n["Sentence Number"] > sentenceNumber);
+            if (nearestCluster0) {
+                links.push({
+                    source: sentenceNumber,
+                    target: nearestCluster0["Sentence Number"],
+                    value: 1  // 细线
+                });
+            }
+        }
+    });
+
+    // 创建 D3 力导向图
+    var width = document.getElementById('graph').clientWidth;
+    var height = document.getElementById('graph').clientHeight;
+
+    var svg = d3.select("#graph").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(width / 2, height / 2));
+
+    // 绘制链接
+    var link = svg.append("g")
+        .selectAll("line")
+        .data(links)
+        .enter().append("line")
+        .attr("stroke-width", d => d.value)
+        .attr("stroke", "#999");
+
+    // 绘制节点
+    var node = svg.append("g")
+        .selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+        .attr("r", d => d.radius)
+        .attr("fill", d => clusterColors[d.cluster % clusterColors.length])
+        .on("mouseover", d => scrollToSentence(d.id))  // 鼠标悬停时跳转到对应的句子
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+    // 添加节点的 label
+    var label = svg.append("g")
+        .selectAll("text")
+        .data(nodes)
+        .enter().append("text")
+        .text(d => d.id)
+        .attr("x", 6)
+        .attr("y", 3);
+
+    // 力模拟图的更新
+    simulation.on("tick", function() {
+        link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+
+        node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+
+        label
+            .attr("x", d => d.x + 6)
+            .attr("y", d => d.y + 3);
+    });
+
+    // 拖动功能
+    function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+    }
+
+    function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
+}
+
+function createLegend() {
+        var legend = document.getElementById("legend");
+        legend.innerHTML = "";  // 清空已有的图例内容
+
+        clusterColors.forEach((color, index) => {
+            // 创建图例项
+            var legendItem = document.createElement("div");
+            legendItem.style.display = "flex";
+            legendItem.style.alignItems = "center";
+            legendItem.style.marginBottom = "5px";
+
+            // 创建颜色方块
+            var colorBox = document.createElement("div");
+            colorBox.style.width = "20px";
+            colorBox.style.height = "20px";
+            colorBox.style.backgroundColor = color;
+            colorBox.style.marginRight = "10px";
+
+            // 创建文本标签
+            var label = document.createElement("span");
+            label.innerText = `Cluster ${index}`;
+
+            // 将颜色方块和标签添加到图例项中
+            legendItem.appendChild(colorBox);
+            legendItem.appendChild(label);
+
+            // 将图例项添加到图例容器中
+            legend.appendChild(legendItem);
+        });
+    }
+
+    // 加载数据后初始化图表和图例
+    fetch('clustered_sentences.json') // 替换为你服务器上的路径
+        .then(response => response.json())
+        .then(data => {
+            highlightSentences = data; // 使用整个句子对象
+            initializePDF();  // 开始加载 PDF
+            updateGraphForPage(1);  // 初始化第一页的 D3 图表
+            createLegend();  // 创建图例
+        });
+
+
+var url = 'T5.pdf';  // 替换为你要加载的PDF文件路径
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 1.5,
+    canvas = document.getElementById('pdf-canvas'),
+    ctx = canvas.getContext('2d');
+
+// 更新 D3 图表，基于当前页的句子
+function updateGraphForPage(page) {
+    // 获取当前页的数据，句子数据中已包含 Page 字段
+    var pageData = highlightSentences.filter(d => d.Page === page); 
+    createGraph(pageData);
+}
+
+// 初始化 PDF 加载和渲染逻辑
+function initializePDF() {
+    // 加载 PDF 文档
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+        pdfDoc = pdfDoc_;
+        document.getElementById('page-count').textContent = pdfDoc.numPages;
+
+        // 初始渲染第一页
+        renderPage(pageNum);
+    });
+}
+
+// 渲染指定页码的页面
+function renderPage(num) {
+    pageRendering = true;
+
+    // 使用PDF.js获取该页内容
+    pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({ scale: scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // 渲染页面
+        var renderContext = {
+            canvasContext: ctx,
+            viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        // 页面渲染完毕后
+        renderTask.promise.then(function() {
+            pageRendering = false;
+
+            if (pageNumPending !== null) {
+                renderPage(pageNumPending);
+                pageNumPending = null;
+            }
+        });
+
+        document.getElementById('page-num').textContent = num;
+
+        // 提取该页的文本内容并显示在右侧
+        extractText(page);
+
+        // 更新图表
+        updateGraphForPage(num);
+    });
+}
+
+// 提取PDF页面文本内容
+function extractText(page) {
+    page.getTextContent().then(function(textContent) {
+        var textDiv = document.getElementById('extracted-text');
+        textDiv.innerHTML = '';  // 清除上一页的内容
+
+        var currentParagraph = '';
+        var lastY = null;
+
+        textContent.items.forEach(function(item) {
+            var transform = item.transform;
+            var currentY = transform[5];  // 获取y坐标（纵向位置）
+
+            if (lastY !== null && Math.abs(currentY - lastY) > 14) {
+                var p = document.createElement('p');
+                p.innerHTML = highlightText(currentParagraph);
+                
+                // 进行部分匹配
+                const matchedSentence = highlightSentences.find(s => currentParagraph.trim().includes(s.Sentence));
+                if (matchedSentence) {
+                    p.id = `sentence-${matchedSentence["Sentence Number"]}`;
+                }
+                textDiv.appendChild(p);
+                currentParagraph = '';
+            }
+
+            currentParagraph += item.str + ' ';
+            lastY = currentY;
+        });
+
+        if (currentParagraph.trim() !== '') {
+            var p = document.createElement('p');
+            p.innerHTML = highlightText(currentParagraph);
+
+            // 进行部分匹配
+            const matchedSentence = highlightSentences.find(s => currentParagraph.trim().includes(s.Sentence));
+            if (matchedSentence) {
+                p.id = `sentence-${matchedSentence["Sentence Number"]}`;
+            }
+            textDiv.appendChild(p);
+        }
+    });
+}
+
+function scrollToSentence(sentenceNumber) {
+    var element = document.getElementById(`sentence-${sentenceNumber}`);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+// 如果在渲染中，请求翻页时队列页码
+function queueRenderPage(num) {
+    if (pageRendering) {
+        pageNumPending = num;
+    } else {
+        renderPage(num);
+    }
+}
+
+// 上一页按钮事件
+document.getElementById('prev-page').addEventListener('click', function() {
+    if (pageNum <= 1) {
+        return;
+    }
+    pageNum--;
+    queueRenderPage(pageNum);
+});
+
+// 下一页按钮事件
+document.getElementById('next-page').addEventListener('click', function() {
+    if (pageNum >= pdfDoc.numPages) {
+        return;
+    }
+    pageNum++;
+    queueRenderPage(pageNum);
+});
+</script>
+
+<div id="info-box" style="position: absolute; display: none; background-color: #fff; border: 1px solid #ccc; padding: 5px; border-radius: 5px; font-size: 14px;"></div>
+</body>
+</html>
+
